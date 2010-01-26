@@ -1,0 +1,1939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/loose.dtd">
+<html>
+<!-- Created on January, 26 2010 by texi2html 1.70 -->
+<!--
+Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
+            Karl Berry  <karl@freefriends.org>
+            Olaf Bachmann <obachman@mathematik.uni-kl.de>
+            and many others.
+Maintained by: Many creative people <dev@texi2html.cvshome.org>
+Send bugs and suggestions to <users@texi2html.cvshome.org>
+
+-->
+<head>
+<title>General Documentation: 1. external libraries</title>
+
+<meta name="description" content="General Documentation: 1. external libraries">
+<meta name="keywords" content="General Documentation: 1. external libraries">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="texi2html 1.70">
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+pre.display {font-family: serif}
+pre.format {font-family: serif}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: serif; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: serif; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+ul.toc {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+
+<a name="SEC1"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[ &lt; ]</td>
+<td valign="middle" align="left">[<a href="#SEC2" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[ &lt;&lt; ]</td>
+<td valign="middle" align="left">[ Up ]</td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1 class="chapter"> 1. external libraries </h1>
+
+<p>FFmpeg can be hooked up with a number of external libraries to add support
+for more formats. None of them are used by default, their use has to be
+explicitly requested by passing the appropriate flags to `<tt>./configure</tt>'.
+
+</p><hr size="6">
+<a name="SEC2"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC1" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 1.1 OpenCORE AMR </h2>
+
+<p>FFmpeg can make use of the OpenCORE libraries for AMR-NB
+decoding/encoding and AMR-WB decoding.
+
+</p><p>Go to <a href="http://sourceforge.net/projects/opencore-amr/">http://sourceforge.net/projects/opencore-amr/</a> and follow the instructions for
+installing the libraries. Then pass <code>--enable-libopencore-amrnb</code> and/or
+<code>--enable-libopencore-amrwb</code> to configure to enable the libraries.
+
+</p><p>Note that OpenCORE is under the Apache License 2.0 (see
+<a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a> for details), which is
+incompatible with the LGPL version 2.1 and GPL version 2. You have to
+upgrade FFmpeg's license to LGPL version 3 (or if you have enabled
+GPL components, GPL version 3) to use it.
+
+</p>
+<hr size="6">
+<a name="SEC3"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC2" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC4" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1 class="chapter"> 2. Supported File Formats and Codecs </h1>
+
+<p>You can use the <code>-formats</code> and <code>-codecs</code> options to have an exhaustive list.
+
+</p><hr size="6">
+<a name="SEC4"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC3" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC5" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 2.1 File Formats </h2>
+
+<p>FFmpeg supports the following file formats through the <code>libavformat</code>
+library:
+
+</p><table>
+<tr><td><p> Name </p></td><td><p> Encoding </p></td><td><p> Decoding </p></td><td><p> Comments
+</p></td></tr>
+<tr><td><p> 4xm                       </p></td><td>   </td><td><p> X
+    </p></td><td><p> 4X Technologies format, used in some games.
+</p></td></tr>
+<tr><td><p> 8088flex TMV              </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> Audio IFF (AIFF)          </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> American Laser Games MM   </p></td><td>   </td><td><p> X
+    </p></td><td><p> Multimedia format used in games like Mad Dog McCree.
+</p></td></tr>
+<tr><td><p> 3GPP AMR                  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> ASF                       </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> AVI                       </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> AVISynth                  </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> AVS                       </p></td><td>   </td><td><p> X
+    </p></td><td><p> Multimedia format used by the Creature Shock game.
+</p></td></tr>
+<tr><td><p> Beam Software SIFF        </p></td><td>   </td><td><p> X
+    </p></td><td><p> Audio and video format used in some games by Beam Software.
+</p></td></tr>
+<tr><td><p> Bethesda Softworks VID    </p></td><td>   </td><td><p> X
+    </p></td><td><p> Used in some games from Bethesda Softworks.
+</p></td></tr>
+<tr><td><p> Brute Force &amp; Ignorance   </p></td><td>   </td><td><p> X
+    </p></td><td><p> Used in the game Flash Traffic: City of Angels.
+</p></td></tr>
+<tr><td><p> Interplay C93             </p></td><td>   </td><td><p> X
+    </p></td><td><p> Used in the game Cyberia from Interplay.
+</p></td></tr>
+<tr><td><p> Delphine Software International CIN </p></td><td>   </td><td><p> X
+    </p></td><td><p> Multimedia format used by Delphine Software games.
+</p></td></tr>
+<tr><td><p> CD+G                      </p></td><td>   </td><td><p> X
+    </p></td><td><p> Video format used by CD+G karaoke disks
+</p></td></tr>
+<tr><td><p> Core Audio Format         </p></td><td>   </td><td><p> X
+    </p></td><td><p> Apple Core Audio Format
+</p></td></tr>
+<tr><td><p> CRC testing format        </p></td><td><p> X </p></td><td>
+</td></tr>
+<tr><td><p> Creative Voice            </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> Created for the Sound Blaster Pro.
+</p></td></tr>
+<tr><td><p> CRYO APC                  </p></td><td>   </td><td><p> X
+    </p></td><td><p> Audio format used in some games by CRYO Interactive Entertainment.
+</p></td></tr>
+<tr><td><p> D-Cinema audio            </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> DV video                  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> DXA                       </p></td><td>   </td><td><p> X
+    </p></td><td><p> This format is used in the non-Windows version of the Feeble Files
+         game and different game cutscenes repacked for use with ScummVM.
+</p></td></tr>
+<tr><td><p> Electronic Arts cdata  </p></td><td>    </td><td><p> X
+</p></td></tr>
+<tr><td><p> Electronic Arts Multimedia  </p></td><td>    </td><td><p> X
+    </p></td><td><p> Used in various EA games; files have extensions like WVE and UV2.
+</p></td></tr>
+<tr><td><p> FFM (FFserver live feed)  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> Flash (SWF)               </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> Flash 9 (AVM2)            </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> Only embedded audio is decoded.
+</p></td></tr>
+<tr><td><p> FLI/FLC/FLX animation     </p></td><td>   </td><td><p> X
+    </p></td><td><p> .fli/.flc files
+</p></td></tr>
+<tr><td><p> Flash Video (FLV)         </p></td><td>   </td><td><p> X
+    </p></td><td><p> Macromedia Flash video files
+</p></td></tr>
+<tr><td><p> framecrc testing format   </p></td><td><p> X </p></td><td>
+</td></tr>
+<tr><td><p> FunCom ISS                </p></td><td>   </td><td><p> X
+    </p></td><td><p> Audio format used in various games from FunCom like The Longest Journey.
+</p></td></tr>
+<tr><td><p> GIF Animation             </p></td><td><p> X </p></td><td>
+</td></tr>
+<tr><td><p> GXF                       </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> General eXchange Format SMPTE 360M, used by Thomson Grass Valley
+         playout servers.
+</p></td></tr>
+<tr><td><p> id Quake II CIN video     </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> id RoQ                    </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> Used in Quake III, Jedi Knight 2, other computer games.
+</p></td></tr>
+<tr><td><p> IEC61937 encapsulation </p></td><td><p> X </p></td><td>
+</td></tr>
+<tr><td><p> IFF                       </p></td><td>   </td><td><p> X
+    </p></td><td><p> Interchange File Format
+</p></td></tr>
+<tr><td><p> Interplay MVE             </p></td><td>   </td><td><p> X
+    </p></td><td><p> Format used in various Interplay computer games.
+</p></td></tr>
+<tr><td><p> IV8                       </p></td><td>   </td><td><p> X
+    </p></td><td><p> A format generated by IndigoVision 8000 video server.
+</p></td></tr>
+<tr><td><p> LMLM4                     </p></td><td>   </td><td><p> X
+    </p></td><td><p> Used by Linux Media Labs MPEG-4 PCI boards
+</p></td></tr>
+<tr><td><p> Matroska                  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> Matroska audio            </p></td><td><p> X </p></td><td>
+</td></tr>
+<tr><td><p> MAXIS XA                  </p></td><td>   </td><td><p> X
+    </p></td><td><p> Used in Sim City 3000; file extension .xa.
+</p></td></tr>
+<tr><td><p> MD Studio                 </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> Monkey's Audio            </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> Motion Pixels MVI         </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> MOV/QuickTime/MP4         </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> 3GP, 3GP2, PSP, iPod variants supported
+</p></td></tr>
+<tr><td><p> MP2                       </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> MP3                       </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> MPEG-1 System             </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> muxed audio and video, VCD format supported
+</p></td></tr>
+<tr><td><p> MPEG-PS (program stream)  </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> also known as <code>VOB</code> file, SVCD and DVD format supported
+</p></td></tr>
+<tr><td><p> MPEG-TS (transport stream) </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> also known as DVB Transport Stream
+</p></td></tr>
+<tr><td><p> MPEG-4                    </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> MPEG-4 is a variant of QuickTime.
+</p></td></tr>
+<tr><td><p> MIME multipart JPEG       </p></td><td><p> X </p></td><td>
+</td></tr>
+<tr><td><p> MSN TCP webcam            </p></td><td>   </td><td><p> X
+    </p></td><td><p> Used by MSN Messenger webcam streams.
+</p></td></tr>
+<tr><td><p> MTV                       </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> Musepack                  </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> Musepack SV8              </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> Material eXchange Format (MXF) </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> SMPTE 377M, used by D-Cinema, broadcast industry.
+</p></td></tr>
+<tr><td><p> Material eXchange Format (MXF), D-10 Mapping </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> SMPTE 386M, D-10/IMX Mapping.
+</p></td></tr>
+<tr><td><p> NC camera feed            </p></td><td>   </td><td><p> X
+    </p></td><td><p> NC (AVIP NC4600) camera streams
+</p></td></tr>
+<tr><td><p> NTT TwinVQ (VQF)          </p></td><td>   </td><td><p> X
+    </p></td><td><p> Nippon Telegraph and Telephone Corporation TwinVQ.
+</p></td></tr>
+<tr><td><p> Nullsoft Streaming Video  </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> NuppelVideo               </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> NUT                       </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> NUT Open Container Format
+</p></td></tr>
+<tr><td><p> Ogg                       </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> TechnoTrend PVA           </p></td><td>   </td><td><p> X
+    </p></td><td><p> Used by TechnoTrend DVB PCI boards.
+</p></td></tr>
+<tr><td><p> QCP                       </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> raw ADTS (AAC)            </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw AC-3                  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw Chinese AVS video     </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> raw CRI ADX               </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw Dirac                 </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw DNxHD                 </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw DTS                   </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw E-AC-3                </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw FLAC                  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw GSM                   </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> raw H.261                 </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw H.263                 </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw H.264                 </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw Ingenient MJPEG       </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> raw MJPEG                 </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw MLP                   </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> raw MPEG                  </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> raw MPEG-1                </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> raw MPEG-2                </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> raw MPEG-4                </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw NULL                  </p></td><td><p> X </p></td><td>
+</td></tr>
+<tr><td><p> raw video                 </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw id RoQ                </p></td><td><p> X </p></td><td>
+</td></tr>
+<tr><td><p> raw Shorten               </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> raw TrueHD                </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw VC-1                  </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM A-law             </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM mu-law            </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM signed 8 bit      </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM signed 16 bit big-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM signed 16 bit little-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM signed 24 bit big-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM signed 24 bit little-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM signed 32 bit big-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM signed 32 bit little-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM unsigned 8 bit    </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM unsigned 16 bit big-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM unsigned 16 bit little-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM unsigned 24 bit big-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM unsigned 24 bit little-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM unsigned 32 bit big-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM unsigned 32 bit little-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM floating-point 32 bit big-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM floating-point 32 bit little-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM floating-point 64 bit big-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> raw PCM floating-point 64 bit little-endian  </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> RDT                       </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> REDCODE R3D               </p></td><td>   </td><td><p> X
+    </p></td><td><p> File format used by RED Digital cameras, contains JPEG 2000 frames and PCM audio.
+</p></td></tr>
+<tr><td><p> RealMedia                 </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> Redirector                </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> Renderware TeXture Dictionary </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> RL2                       </p></td><td>   </td><td><p> X
+    </p></td><td><p> Audio and video format used in some games by Entertainment Software Partners.
+</p></td></tr>
+<tr><td><p> RPL/ARMovie               </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> RTMP                      </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> Output is performed by publishing stream to RTMP server
+</p></td></tr>
+<tr><td><p> RTP                       </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> RTSP                      </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> SDP                       </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> Sega FILM/CPK             </p></td><td>   </td><td><p> X
+    </p></td><td><p> Used in many Sega Saturn console games.
+</p></td></tr>
+<tr><td><p> Sierra SOL                </p></td><td>   </td><td><p> X
+    </p></td><td><p> .sol files used in Sierra Online games.
+</p></td></tr>
+<tr><td><p> Sierra VMD                </p></td><td>   </td><td><p> X
+    </p></td><td><p> Used in Sierra CD-ROM games.
+</p></td></tr>
+<tr><td><p> Smacker                   </p></td><td>   </td><td><p> X
+    </p></td><td><p> Multimedia format used by many games.
+</p></td></tr>
+<tr><td><p> Sony OpenMG (OMA)         </p></td><td>   </td><td><p> X
+    </p></td><td><p> Audio format used in Sony Sonic Stage and Sony Vegas.
+</p></td></tr>
+<tr><td><p> Sony PlayStation STR      </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> Sony Wave64 (W64)         </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> SoX native format         </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> SUN AU format             </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> THP                       </p></td><td>   </td><td><p> X
+    </p></td><td><p> Used on the Nintendo GameCube.
+</p></td></tr>
+<tr><td><p> Tiertex Limited SEQ       </p></td><td>   </td><td><p> X
+    </p></td><td><p> Tiertex .seq files used in the DOS CD-ROM version of the game Flashback.
+</p></td></tr>
+<tr><td><p> True Audio                </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> VC-1 test bitstream       </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> WAV                       </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> WavPack                   </p></td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> Wing Commander III movie  </p></td><td>   </td><td><p> X
+    </p></td><td><p> Multimedia format used in Origin's Wing Commander III computer game.
+</p></td></tr>
+<tr><td><p> Westwood Studios audio    </p></td><td>   </td><td><p> X
+    </p></td><td><p> Multimedia format used in Westwood Studios games.
+</p></td></tr>
+<tr><td><p> Westwood Studios VQA      </p></td><td>   </td><td><p> X
+    </p></td><td><p> Multimedia format used in Westwood Studios games.
+</p></td></tr>
+<tr><td><p> YUV4MPEG pipe             </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+</table>
+
+<p><code>X</code> means that encoding (resp. decoding) is supported.
+
+</p><hr size="6">
+<a name="SEC5"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC4" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 2.2 Image Formats </h2>
+
+<p>FFmpeg can read and write images for each frame of a video sequence. The
+following image formats are supported:
+
+</p><table>
+<tr><td><p> Name </p></td><td><p> Encoding </p></td><td><p> Decoding </p></td><td><p> Comments
+</p></td></tr>
+<tr><td><p> .Y.U.V       </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> one raw file per component
+</p></td></tr>
+<tr><td><p> animated GIF </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> Only uncompressed GIFs are generated.
+</p></td></tr>
+<tr><td><p> BMP          </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> Microsoft BMP image
+</p></td></tr>
+<tr><td><p> DPX          </p></td><td>   </td><td><p> X
+    </p></td><td><p> Digital Picture Exchange
+</p></td></tr>
+<tr><td><p> JPEG         </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> Progressive JPEG is not supported.
+</p></td></tr>
+<tr><td><p> JPEG 2000    </p></td><td>   </td><td><p> E
+    </p></td><td><p> decoding supported through external library libopenjpeg
+</p></td></tr>
+<tr><td><p> JPEG-LS      </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> LJPEG        </p></td><td><p> X </p></td><td>
+    </td><td><p> Lossless JPEG
+</p></td></tr>
+<tr><td><p> PAM          </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> PAM is a PNM extension with alpha support.
+</p></td></tr>
+<tr><td><p> PBM          </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> Portable BitMap image
+</p></td></tr>
+<tr><td><p> PCX          </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> PC Paintbrush
+</p></td></tr>
+<tr><td><p> PGM          </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> Portable GrayMap image
+</p></td></tr>
+<tr><td><p> PGMYUV       </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> PGM with U and V components in YUV 4:2:0
+</p></td></tr>
+<tr><td><p> PNG          </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> 2/4 bpp not supported yet
+</p></td></tr>
+<tr><td><p> PPM          </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> Portable PixelMap image
+</p></td></tr>
+<tr><td><p> PTX          </p></td><td>   </td><td><p> X
+    </p></td><td><p> V.Flash PTX format
+</p></td></tr>
+<tr><td><p> SGI          </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> SGI RGB image format
+</p></td></tr>
+<tr><td><p> Sun Rasterfile  </p></td><td>   </td><td><p> X
+    </p></td><td><p> Sun RAS image format
+</p></td></tr>
+<tr><td><p> TIFF         </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> YUV, JPEG and some extension is not supported yet.
+</p></td></tr>
+<tr><td><p> Truevision Targa  </p></td><td><p> X </p></td><td><p> X
+    </p></td><td><p> Targa (.TGA) image format
+</p></td></tr>
+</table>
+
+<p><code>X</code> means that encoding (resp. decoding) is supported.
+
+</p><p><code>E</code> means that support is provided through an external library.
+
+</p><hr size="6">
+<a name="SEC6"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC5" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC7" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 2.3 Video Codecs </h2>
+
+<table>
+<tr><td><p> Name </p></td><td><p> Encoding </p></td><td><p> Decoding </p></td><td><p> Comments
+</p></td></tr>
+<tr><td><p> 4X Movie               </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in certain computer games.
+</p></td></tr>
+<tr><td><p> 8088flex TMV           </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> 8SVX exponential       </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> 8SVX fibonacci         </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> American Laser Games MM  </p></td><td>    </td><td><p> X
+    </p></td><td><p> Used in games like Mad Dog McCree.
+</p></td></tr>
+<tr><td><p> AMV Video              </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in Chinese MP3 players.
+</p></td></tr>
+<tr><td><p> Apple MJPEG-B          </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Apple QuickDraw        </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: qdrw
+</p></td></tr>
+<tr><td><p> Asus v1                </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> fourcc: ASV1
+</p></td></tr>
+<tr><td><p> Asus v2                </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> fourcc: ASV2
+</p></td></tr>
+<tr><td><p> ATI VCR1               </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: VCR1
+</p></td></tr>
+<tr><td><p> ATI VCR2               </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: VCR2
+</p></td></tr>
+<tr><td><p> Auravision Aura        </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Auravision Aura 2      </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Autodesk Animator Flic video  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Autodesk RLE           </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: AASC
+</p></td></tr>
+<tr><td><p> AVS (Audio Video Standard) video  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Video encoding used by the Creature Shock game.
+</p></td></tr>
+<tr><td><p> Beam Software VB       </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Bethesda VID video     </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in some games from Bethesda Softworks.
+</p></td></tr>
+<tr><td><p> Brute Force &amp; Ignorance   </p></td><td>   </td><td><p> X
+    </p></td><td><p> Used in the game Flash Traffic: City of Angels.
+</p></td></tr>
+<tr><td><p> C93 video              </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Codec used in Cyberia game.
+</p></td></tr>
+<tr><td><p> CamStudio              </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: CSCD
+</p></td></tr>
+<tr><td><p> CD+G                   </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Video codec for CD+G karaoke disks
+</p></td></tr>
+<tr><td><p> Chinese AVS video      </p></td><td>     </td><td><p>  X
+    </p></td><td><p> AVS1-P2, JiZhun profile
+</p></td></tr>
+<tr><td><p> Delphine Software International CIN video  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Codec used in Delphine Software International games.
+</p></td></tr>
+<tr><td><p> Cinepak                </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Cirrus Logic AccuPak   </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: CLJR
+</p></td></tr>
+<tr><td><p> Creative YUV (CYUV)    </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Dirac                  </p></td><td><p>  E  </p></td><td><p>  E
+    </p></td><td><p> supported through external libdirac/libschroedinger libraries
+</p></td></tr>
+<tr><td><p> DNxHD                  </p></td><td><p>   X </p></td><td><p>  X
+    </p></td><td><p> aka SMPTE VC3
+</p></td></tr>
+<tr><td><p> Duck TrueMotion 1.0   </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: DUCK
+</p></td></tr>
+<tr><td><p> Duck TrueMotion 2.0    </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: TM20
+</p></td></tr>
+<tr><td><p> DV (Digital Video)     </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> Feeble Files/ScummVM DXA  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Codec originally used in Feeble Files game.
+</p></td></tr>
+<tr><td><p> Electronic Arts CMV video  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in NHL 95 game.
+</p></td></tr>
+<tr><td><p> Electronic Arts Madcow video  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Electronic Arts TGV video  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Electronic Arts TGQ video  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Electronic Arts TQI video  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Escape 124             </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> FFmpeg video codec #1  </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> experimental lossless codec (fourcc: FFV1)
+</p></td></tr>
+<tr><td><p> Flash Screen Video v1  </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> fourcc: FSV1
+</p></td></tr>
+<tr><td><p> Flash Video (FLV)      </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> Sorenson H.263 used in Flash
+</p></td></tr>
+<tr><td><p> Fraps                  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> H.261                  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> H.263 / H.263-1996     </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> H.263+ / H.263-1998 / H.263 version 2  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10  </p></td><td><p>  E  </p></td><td><p>  X
+    </p></td><td><p> encoding supported through external library libx264
+</p></td></tr>
+<tr><td><p> H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 (VDPAU acceleration)  </p></td><td><p>  E  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> HuffYUV                </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> HuffYUV FFmpeg variant </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> IBM Ultimotion         </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: ULTI
+</p></td></tr>
+<tr><td><p> id Cinematic video     </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in Quake II.
+</p></td></tr>
+<tr><td><p> id RoQ video           </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> Used in Quake III, Jedi Knight 2, other computer games.
+</p></td></tr>
+<tr><td><p> Intel H.263            </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Intel Indeo 2          </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Intel Indeo 3          </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Interplay C93          </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in the game Cyberia from Interplay.
+</p></td></tr>
+<tr><td><p> Interplay MVE video    </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in Interplay .MVE files.
+</p></td></tr>
+<tr><td><p> Karl Morton's video codec  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Codec used in Worms games.
+</p></td></tr>
+<tr><td><p> LCL (LossLess Codec Library) MSZH  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> LCL (LossLess Codec Library) ZLIB  </p></td><td><p>  E  </p></td><td><p>  E
+</p></td></tr>
+<tr><td><p> LOCO                   </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> lossless MJPEG         </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> Microsoft RLE          </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Microsoft Video 1      </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Mimic                  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in MSN Messenger Webcam streams.
+</p></td></tr>
+<tr><td><p> Miro VideoXL           </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: VIXL
+</p></td></tr>
+<tr><td><p> MJPEG (Motion JPEG)    </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> Motion Pixels video    </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> MPEG-1 video           </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> MPEG-1/2 video XvMC (X-Video Motion Compensation)  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> MPEG-1/2 video (VDPAU acceleration)  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> MPEG-2 video           </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> MPEG-4 part 2          </p></td><td><p>  X  </p></td><td><p>  X
+    &nbsp;libxvidcore can be used alternatively for encoding.
+</p></td></tr>
+<tr><td><p> MPEG-4 part 2 Microsoft variant version 1  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> MPEG-4 part 2 Microsoft variant version 2  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> MPEG-4 part 2 Microsoft variant version 3  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> Nintendo Gamecube THP video  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> NuppelVideo/RTjpeg     </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Video encoding used in NuppelVideo files.
+</p></td></tr>
+<tr><td><p> On2 VP3                </p></td><td>     </td><td><p>  X
+    </p></td><td><p> still experimental
+</p></td></tr>
+<tr><td><p> On2 VP5                </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: VP50
+</p></td></tr>
+<tr><td><p> On2 VP6                </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: VP60,VP61,VP62
+</p></td></tr>
+<tr><td><p> planar RGB             </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: 8BPS
+</p></td></tr>
+<tr><td><p> Q-team QPEG            </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourccs: QPEG, Q1.0, Q1.1
+</p></td></tr>
+<tr><td><p> QuickTime 8BPS video   </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> QuickTime Animation (RLE) video  </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> fourcc: 'rle '
+</p></td></tr>
+<tr><td><p> QuickTime Graphics (SMC)  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: 'smc '
+</p></td></tr>
+<tr><td><p> QuickTime video (RPZA) </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: rpza
+</p></td></tr>
+<tr><td><p> R210 Quicktime Uncompressed RGB 10-bit     </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Raw Video              </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> RealVideo 1.0          </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> RealVideo 2.0          </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> RealVideo 3.0          </p></td><td>     </td><td><p>  X
+    </p></td><td><p> still far from ideal
+</p></td></tr>
+<tr><td><p> RealVideo 4.0          </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Renderware TXD (TeXture Dictionary)  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Texture dictionaries used by the Renderware Engine.
+</p></td></tr>
+<tr><td><p> RL2 video              </p></td><td>     </td><td><p>  X
+    </p></td><td><p> used in some games by Entertainment Software Partners
+</p></td></tr>
+<tr><td><p> Sierra VMD video       </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in Sierra VMD files.
+</p></td></tr>
+<tr><td><p> Smacker video          </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Video encoding used in Smacker.
+</p></td></tr>
+<tr><td><p> SMPTE VC-1             </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Snow                   </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> experimental wavelet codec (fourcc: SNOW)
+</p></td></tr>
+<tr><td><p> Sony PlayStation MDEC (Motion DECoder)  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Sorenson Vector Quantizer 1  </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> fourcc: SVQ1
+</p></td></tr>
+<tr><td><p> Sorenson Vector Quantizer 3  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: SVQ3
+</p></td></tr>
+<tr><td><p> Sunplus JPEG (SP5X)    </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: SP5X
+</p></td></tr>
+<tr><td><p> TechSmith Screen Capture Codec  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> fourcc: TSCC
+</p></td></tr>
+<tr><td><p> Theora                 </p></td><td><p>  E  </p></td><td><p>  X
+    </p></td><td><p> encoding supported through external library libtheora
+</p></td></tr>
+<tr><td><p> Tiertex Limited SEQ video  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Codec used in DOS CD-ROM FlashBack game.
+</p></td></tr>
+<tr><td><p> V210 Quicktime Uncompressed 4:2:2 10-bit     </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> VMware Screen Codec / VMware Video  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Codec used in videos captured by VMware.
+</p></td></tr>
+<tr><td><p> Westwood Studios VQA (Vector Quantized Animation) video  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Windows Media Video 7  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> Windows Media Video 8  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> Windows Media Video 9  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> not completely working
+</p></td></tr>
+<tr><td><p> Wing Commander III / Xan  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in Wing Commander III .MVE files.
+</p></td></tr>
+<tr><td><p> Winnov WNV1            </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> WMV7                   </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> YAMAHA SMAF            </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> ZLIB                   </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> part of LCL, encoder experimental
+</p></td></tr>
+<tr><td><p> Zip Motion Blocks Video  </p></td><td><p>   X </p></td><td><p>  X
+    </p></td><td><p> Encoder works only in PAL8.
+</p></td></tr>
+</table>
+
+<p><code>X</code> means that encoding (resp. decoding) is supported.
+
+</p><p><code>E</code> means that support is provided through an external library.
+
+</p><hr size="6">
+<a name="SEC7"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC6" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC8" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 2.4 Audio Codecs </h2>
+
+<table>
+<tr><td><p> Name </p></td><td><p> Encoding </p></td><td><p> Decoding </p></td><td><p> Comments
+</p></td></tr>
+<tr><td><p> 8SVX audio             </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> AAC                    </p></td><td><p>  E  </p></td><td><p>  X
+    </p></td><td><p> encoding supported through external library libfaac
+</p></td></tr>
+<tr><td><p> AC-3                   </p></td><td><p> IX  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM 4X Movie         </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM CDROM XA         </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM Creative Technology </p></td><td>     </td><td><p>  X
+    </p></td><td><p> 16 -&gt; 4, 8 -&gt; 4, 8 -&gt; 3, 8 -&gt; 2
+</p></td></tr>
+<tr><td><p> ADPCM Electronic Arts  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in various EA titles.
+</p></td></tr>
+<tr><td><p> ADPCM Electronic Arts Maxis CDROM XS  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in Sim City 3000.
+</p></td></tr>
+<tr><td><p> ADPCM Electronic Arts R1  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM Electronic Arts R2  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM Electronic Arts R3  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM Electronic Arts XAS </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM G.726            </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM IMA AMV          </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in AMV files
+</p></td></tr>
+<tr><td><p> ADPCM IMA Electronic Arts EACS  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM IMA Electronic Arts SEAD  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM IMA Funcom       </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM IMA QuickTime    </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM IMA Loki SDL MJPEG  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM IMA WAV          </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM IMA Westwood     </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM ISS IMA          </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in FunCom games.
+</p></td></tr>
+<tr><td><p> ADPCM IMA Duck DK3     </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in some Sega Saturn console games.
+</p></td></tr>
+<tr><td><p> ADPCM IMA Duck DK4     </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in some Sega Saturn console games.
+</p></td></tr>
+<tr><td><p> ADPCM Microsoft        </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM MS IMA           </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM Nintendo Gamecube THP  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM QT IMA           </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM SEGA CRI ADX     </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> Used in Sega Dreamcast games.
+</p></td></tr>
+<tr><td><p> ADPCM Shockwave Flash  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM SMJPEG IMA       </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in certain Loki game ports.
+</p></td></tr>
+<tr><td><p> ADPCM Sound Blaster Pro 2-bit  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM Sound Blaster Pro 2.6-bit  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM Sound Blaster Pro 4-bit  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> ADPCM Westwood Studios IMA </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in Westwood Studios games like Command and Conquer.
+</p></td></tr>
+<tr><td><p> ADPCM Yamaha           </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> AMR-NB                 </p></td><td><p>  E  </p></td><td><p>  E
+    </p></td><td><p> supported through external library libopencore-amrnb
+</p></td></tr>
+<tr><td><p> AMR-WB                 </p></td><td>     </td><td><p>  E
+    </p></td><td><p> decoding supported through external library libopencore-amrwb
+</p></td></tr>
+<tr><td><p> Apple lossless audio   </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> QuickTime fourcc 'alac'
+</p></td></tr>
+<tr><td><p> Atrac 1                </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Atrac 3                </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Delphine Software International CIN audio  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Codec used in Delphine Software International games.
+</p></td></tr>
+<tr><td><p> COOK                   </p></td><td>     </td><td><p>  X
+    </p></td><td><p> All versions except 5.1 are supported.
+</p></td></tr>
+<tr><td><p> DCA (DTS Coherent Acoustics)  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> DPCM id RoQ            </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> Used in Quake III, Jedi Knight 2, other computer games.
+</p></td></tr>
+<tr><td><p> DPCM Interplay         </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in various Interplay computer games.
+</p></td></tr>
+<tr><td><p> DPCM Sierra Online     </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in Sierra Online game audio files.
+</p></td></tr>
+<tr><td><p> DPCM Sol               </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> DPCM Xan               </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in Origin's Wing Commander IV AVI files.
+</p></td></tr>
+<tr><td><p> DSP Group TrueSpeech   </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> DV audio               </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Enhanced AC-3          </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> FLAC (Free Lossless Audio Codec)  </p></td><td><p>  X  </p></td><td><p>  IX
+</p></td></tr>
+<tr><td><p> G.729                  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> GSM                    </p></td><td><p>  E  </p></td><td><p>  E
+    </p></td><td><p> supported through external library libgsm
+</p></td></tr>
+<tr><td><p> GSM Microsoft variant  </p></td><td><p>  E  </p></td><td><p>  E
+    </p></td><td><p> supported through external library libgsm
+</p></td></tr>
+<tr><td><p> IMC (Intel Music Coder)  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> MACE (Macintosh Audio Compression/Expansion) 3:1  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> MACE (Macintosh Audio Compression/Expansion) 6:1  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> MLP (Meridian Lossless Packing)  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in DVD-Audio discs.
+</p></td></tr>
+<tr><td><p> Monkey's Audio         </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Only versions 3.97-3.99 are supported.
+</p></td></tr>
+<tr><td><p> MP1 (MPEG audio layer 1)  </p></td><td>     </td><td><p> IX
+</p></td></tr>
+<tr><td><p> MP2 (MPEG audio layer 2)  </p></td><td><p> IX  </p></td><td><p> IX
+</p></td></tr>
+<tr><td><p> MP3 (MPEG audio layer 3)  </p></td><td><p>  E  </p></td><td><p> IX
+    </p></td><td><p> encoding supported through external library LAME, ADU MP3 and MP3onMP4 also supported
+</p></td></tr>
+<tr><td><p> MPEG-4 Audio Lossless Coding (ALS)  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Musepack SV7           </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Musepack SV8           </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Nellymoser Asao        </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM A-law              </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM mu-law             </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM 16-bit little-endian planar  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM 32-bit floating point big-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM 32-bit floating point little-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM 64-bit floating point big-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM 64-bit floating point little-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM D-Cinema audio signed 24-bit   </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM signed 8-bit       </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM signed 16-bit big-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM signed 16-bit little-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM signed 24-bit big-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM signed 24-bit little-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM signed 32-bit big-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM signed 32-bit little-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM signed 16/20/24-bit big-endian in MPEG-TS  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM unsigned 8-bit     </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM unsigned 16-bit big-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM unsigned 16-bit little-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM unsigned 24-bit big-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM unsigned 24-bit little-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM unsigned 32-bit big-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM unsigned 32-bit little-endian  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> PCM Zork               </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> QCELP / PureVoice      </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> QDesign Music Codec 2  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> There are still some distortions.
+</p></td></tr>
+<tr><td><p> RealAudio 1.0 (14.4K)  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Real 14400 bit/s codec
+</p></td></tr>
+<tr><td><p> RealAudio 2.0 (28.8K)  </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Real 28800 bit/s codec
+</p></td></tr>
+<tr><td><p> RealAudio 3.0 (dnet)   </p></td><td><p> IX  </p></td><td><p>  X
+    </p></td><td><p> Real low bitrate AC-3 codec
+</p></td></tr>
+<tr><td><p> Shorten                </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Sierra VMD audio       </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in Sierra VMD files.
+</p></td></tr>
+<tr><td><p> Smacker audio          </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Sonic                  </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> experimental codec
+</p></td></tr>
+<tr><td><p> Sonic lossless         </p></td><td><p>  X  </p></td><td><p>  X
+    </p></td><td><p> experimental codec
+</p></td></tr>
+<tr><td><p> Speex                  </p></td><td>     </td><td><p>  E
+    </p></td><td><p> supported through external library libspeex
+</p></td></tr>
+<tr><td><p> True Audio (TTA)       </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> TrueHD                 </p></td><td>     </td><td><p>  X
+    </p></td><td><p> Used in HD-DVD and Blu-Ray discs.
+</p></td></tr>
+<tr><td><p> TwinVQ (VQF flavor)    </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Vorbis                 </p></td><td><p>  E  </p></td><td><p>  X
+    &nbsp;A native but very primitive encoder exists.
+</p></td></tr>
+<tr><td><p> WavPack                </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Westwood Audio (SND1)  </p></td><td>     </td><td><p>  X
+</p></td></tr>
+<tr><td><p> Windows Media Audio 1  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> Windows Media Audio 2  </p></td><td><p>  X  </p></td><td><p>  X
+</p></td></tr>
+<tr><td><p> Windows Media Audio Pro </p></td><td>    </td><td><p>  X
+</p></td></tr>
+</table>
+
+<p><code>X</code> means that encoding (resp. decoding) is supported.
+
+</p><p><code>E</code> means that support is provided through an external library.
+
+</p><p><code>I</code> means that an integer-only version is available, too (ensures high
+performance on systems without hardware floating point support).
+
+</p><hr size="6">
+<a name="SEC8"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC7" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC9" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 2.5 Subtitle Formats </h2>
+
+<table>
+<tr><td><p> Name </p></td><td><p> Muxing </p></td><td><p> Demuxing </p></td><td><p> Encoding </p></td><td><p> Decoding
+</p></td></tr>
+<tr><td><p> SSA/ASS      </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> DVB          </p></td><td><p> X </p></td><td><p> X </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> DVD          </p></td><td><p> X </p></td><td><p> X </p></td><td><p> X </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> PGS          </p></td><td>   </td><td>   </td><td>   </td><td><p> X
+</p></td></tr>
+<tr><td><p> XSUB         </p></td><td>   </td><td>   </td><td><p> X </p></td><td><p> X
+</p></td></tr>
+</table>
+
+<p><code>X</code> means that the feature is supported.
+
+</p><hr size="6">
+<a name="SEC9"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC8" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC10" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 2.6 Network Protocols </h2>
+
+<table>
+<tr><td><p> Name         </p></td><td><p> Support
+</p></td></tr>
+<tr><td><p> file         </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> Gopher       </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> HTTP         </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> pipe         </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> RTP          </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> TCP          </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> UDP          </p></td><td><p> X
+</p></td></tr>
+</table>
+
+<p><code>X</code> means that the protocol is supported.
+
+</p>
+<hr size="6">
+<a name="SEC10"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC9" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 2.7 Input/Output Devices </h2>
+
+<table>
+<tr><td><p> Name              </p></td><td><p> Input  </p></td><td><p> Output
+</p></td></tr>
+<tr><td><p> ALSA              </p></td><td><p> X      </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> BEOS audio        </p></td><td><p> X      </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> BKTR              </p></td><td><p> X      </p></td><td>
+</td></tr>
+<tr><td><p> DV1394            </p></td><td><p> X      </p></td><td>
+</td></tr>
+<tr><td><p> JACK              </p></td><td><p> X      </p></td><td>
+</td></tr>
+<tr><td><p> LIBDC1394         </p></td><td><p> X      </p></td><td>
+</td></tr>
+<tr><td><p> OSS               </p></td><td><p> X      </p></td><td><p> X
+</p></td></tr>
+<tr><td><p> Video4Linux       </p></td><td><p> X      </p></td><td>
+</td></tr>
+<tr><td><p> Video4Linux2      </p></td><td><p> X      </p></td><td>
+</td></tr>
+<tr><td><p> VfW capture       </p></td><td><p> X      </p></td><td>
+</td></tr>
+<tr><td><p> X11 grabbing      </p></td><td><p> X      </p></td><td>
+</td></tr>
+</table>
+
+<p><code>X</code> means that input/output is supported.
+
+</p>
+<hr size="6">
+<a name="SEC11"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC10" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC12" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1 class="chapter"> 3. Platform Specific information </h1>
+
+<hr size="6">
+<a name="SEC12"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC11" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC13" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.1 BSD </h2>
+
+<p>BSD make will not build FFmpeg, you need to install and use GNU Make
+(`<tt>gmake</tt>').
+
+</p><hr size="6">
+<a name="SEC13"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC12" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC14" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.2 Windows </h2>
+
+<p>To get help and instructions for building FFmpeg under Windows, check out
+the FFmpeg Windows Help Forum at
+<a href="http://ffmpeg.arrozcru.org/">http://ffmpeg.arrozcru.org/</a>.
+
+</p><hr size="6">
+<a name="SEC14"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC13" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC15" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC13" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="subsection"> 3.2.1 Native Windows compilation </h3>
+
+<p>FFmpeg can be built to run natively on Windows using the MinGW tools. Install
+the latest versions of MSYS and MinGW from <a href="http://www.mingw.org/">http://www.mingw.org/</a>.
+You can find detailed installation
+instructions in the download section and the FAQ.
+
+</p><p>FFmpeg does not build out-of-the-box with the packages the automated MinGW
+installer provides. It also requires coreutils to be installed and many other
+packages updated to the latest version. The minimum version for some packages
+are listed below:
+
+</p><ul class="toc">
+<li><p> bash 3.1
+</p></li><li><p> msys-make 3.81-2 (note: not mingw32-make)
+</p></li><li><p> w32api 3.13
+</p></li><li><p> mingw-runtime 3.15
+</p></li></ul>
+
+<p>FFmpeg automatically passes <code>-fno-common</code> to the compiler to work around
+a GCC bug (see <a href="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=37216">http://gcc.gnu.org/bugzilla/show_bug.cgi?id=37216</a>).
+
+</p><p>Within the MSYS shell, configure and make with:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">./configure --enable-memalign-hack
+make
+make install
+</pre></td></tr></table>
+<p>This will install `<tt>ffmpeg.exe</tt>' along with many other development files
+to `<tt>/usr/local</tt>'. You may specify another install path using the
+<code>--prefix</code> option in `<tt>configure</tt>'.
+
+</p><p>Notes:
+
+</p><ul class="toc">
+<li><p> Building natively using MSYS can be sped up by disabling implicit rules
+in the Makefile by calling <code>make -r</code> instead of plain <code>make</code>. This
+speed up is close to non-existent for normal one-off builds and is only
+noticeable when running make for a second time (for example in
+<code>make install</code>).
+
+</p></li><li><p> In order to compile FFplay, you must have the MinGW development library
+of SDL. Get it from <a href="http://www.libsdl.org">http://www.libsdl.org</a>.
+Edit the `<tt>bin/sdl-config</tt>' script so that it points to the correct prefix
+where SDL was installed. Verify that `<tt>sdl-config</tt>' can be launched from
+the MSYS command line.
+
+</p></li><li><p> By using <code>./configure --enable-shared</code> when configuring FFmpeg,
+you can build libavutil, libavcodec and libavformat as DLLs.
+
+</p></li></ul>
+
+<hr size="6">
+<a name="SEC15"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC14" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC16" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC13" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="subsection"> 3.2.2 Microsoft Visual C++ compatibility </h3>
+
+<p>As stated in the FAQ, FFmpeg will not compile under MSVC++. However, if you
+want to use the libav* libraries in your own applications, you can still
+compile those applications using MSVC++. But the libav* libraries you link
+to <em>must</em> be built with MinGW. However, you will not be able to debug
+inside the libav* libraries, since MSVC++ does not recognize the debug
+symbols generated by GCC.
+We strongly recommend you to move over from MSVC++ to MinGW tools.
+
+</p><p>This description of how to use the FFmpeg libraries with MSVC++ is based on
+Microsoft Visual C++ 2005 Express Edition. If you have a different version,
+you might have to modify the procedures slightly.
+
+</p><hr size="6">
+<a name="SEC16"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC15" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC17" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC15" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h4 class="subsubsection"> 3.2.2.1 Using static libraries </h4>
+
+<p>Assuming you have just built and installed FFmpeg in `<tt>/usr/local</tt>'.
+
+</p><ol>
+<li><p> Create a new console application (&quot;File / New / Project&quot;) and then
+select &quot;Win32 Console Application&quot;. On the appropriate page of the
+Application Wizard, uncheck the &quot;Precompiled headers&quot; option.
+
+</p></li><li><p> Write the source code for your application, or, for testing, just
+copy the code from an existing sample application into the source file
+that MSVC++ has already created for you. For example, you can copy
+`<tt>libavformat/output-example.c</tt>' from the FFmpeg distribution.
+
+</p></li><li><p> Open the &quot;Project / Properties&quot; dialog box. In the &quot;Configuration&quot;
+combo box, select &quot;All Configurations&quot; so that the changes you make will
+affect both debug and release builds. In the tree view on the left hand
+side, select &quot;C/C++ / General&quot;, then edit the &quot;Additional Include
+Directories&quot; setting to contain the path where the FFmpeg includes were
+installed (i.e. `<tt>c:\msys\1.0\local\include</tt>').
+Do not add MinGW's include directory here, or the include files will
+conflict with MSVC's.
+
+</p></li><li><p> Still in the &quot;Project / Properties&quot; dialog box, select
+&quot;Linker / General&quot; from the tree view and edit the
+&quot;Additional Library Directories&quot; setting to contain the `<tt>lib</tt>'
+directory where FFmpeg was installed (i.e. `<tt>c:\msys\1.0\local\lib</tt>'),
+the directory where MinGW libs are installed (i.e. `<tt>c:\mingw\lib</tt>'),
+and the directory where MinGW's GCC libs are installed
+(i.e. `<tt>C:\mingw\lib\gcc\mingw32\4.2.1-sjlj</tt>'). Then select
+&quot;Linker / Input&quot; from the tree view, and add the files `<tt>libavformat.a</tt>',
+`<tt>libavcodec.a</tt>', `<tt>libavutil.a</tt>', `<tt>libmingwex.a</tt>',
+`<tt>libgcc.a</tt>', and any other libraries you used (i.e. `<tt>libz.a</tt>')
+to the end of &quot;Additional Dependencies&quot;.
+
+</p></li><li><p> Now, select &quot;C/C++ / Code Generation&quot; from the tree view. Select
+&quot;Debug&quot; in the &quot;Configuration&quot; combo box. Make sure that &quot;Runtime
+Library&quot; is set to &quot;Multi-threaded Debug DLL&quot;. Then, select &quot;Release&quot; in
+the &quot;Configuration&quot; combo box and make sure that &quot;Runtime Library&quot; is
+set to &quot;Multi-threaded DLL&quot;.
+
+</p></li><li><p> Click &quot;OK&quot; to close the &quot;Project / Properties&quot; dialog box.
+
+</p></li><li><p> MSVC++ lacks some C99 header files that are fundamental for FFmpeg.
+Get msinttypes from <a href="http://code.google.com/p/msinttypes/downloads/list">http://code.google.com/p/msinttypes/downloads/list</a>
+and install it in MSVC++'s include directory
+(i.e. `<tt>C:\Program Files\Microsoft Visual Studio 8\VC\include</tt>').
+
+</p></li><li><p> MSVC++ also does not understand the <code>inline</code> keyword used by
+FFmpeg, so you must add this line before <code>#include</code>ing libav*:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">#define inline _inline
+</pre></td></tr></table></li><li><p> Build your application, everything should work.
+
+</p></li></ol>
+
+<hr size="6">
+<a name="SEC17"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC16" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC18" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC15" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h4 class="subsubsection"> 3.2.2.2 Using shared libraries </h4>
+
+<p>This is how to create DLL and LIB files that are compatible with MSVC++:
+
+</p><ol>
+<li><p> Add a call to `<tt>vcvars32.bat</tt>' (which sets up the environment
+variables for the Visual C++ tools) as the first line of `<tt>msys.bat</tt>'.
+The standard location for `<tt>vcvars32.bat</tt>' is
+`<tt>C:\Program Files\Microsoft Visual Studio 8\VC\bin\vcvars32.bat</tt>',
+and the standard location for `<tt>msys.bat</tt>' is `<tt>C:\msys\1.0\msys.bat</tt>'.
+If this corresponds to your setup, add the following line as the first line
+of `<tt>msys.bat</tt>':
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">call &quot;C:\Program Files\Microsoft Visual Studio 8\VC\bin\vcvars32.bat&quot;
+</pre></td></tr></table>
+<p>Alternatively, you may start the `<tt>Visual Studio 2005 Command Prompt</tt>',
+and run `<tt>c:\msys\1.0\msys.bat</tt>' from there.
+
+</p></li><li><p> Within the MSYS shell, run <code>lib.exe</code>. If you get a help message
+from `<tt>Microsoft (R) Library Manager</tt>', this means your environment
+variables are set up correctly, the `<tt>Microsoft (R) Library Manager</tt>'
+is on the path and will be used by FFmpeg to create
+MSVC++-compatible import libraries.
+
+</p></li><li><p> Build FFmpeg with
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">./configure --enable-shared --enable-memalign-hack
+make
+make install
+</pre></td></tr></table>
+<p>Your install path (`<tt>/usr/local/</tt>' by default) should now have the
+necessary DLL and LIB files under the `<tt>bin</tt>' directory.
+
+</p></li></ol>
+
+<p>To use those files with MSVC++, do the same as you would do with
+the static libraries, as described above. But in Step 4,
+you should only need to add the directory where the LIB files are installed
+(i.e. `<tt>c:\msys\usr\local\bin</tt>'). This is not a typo, the LIB files are
+installed in the `<tt>bin</tt>' directory. And instead of adding `<tt>libxx.a</tt>'
+files, you should add `<tt>avcodec.lib</tt>', `<tt>avformat.lib</tt>', and
+`<tt>avutil.lib</tt>'. There should be no need for `<tt>libmingwex.a</tt>',
+`<tt>libgcc.a</tt>', and `<tt>wsock32.lib</tt>', nor any other external library
+statically linked into the DLLs. The `<tt>bin</tt>' directory contains a bunch
+of DLL files, but the ones that are actually used to run your application
+are the ones with a major version number in their filenames
+(i.e. `<tt>avcodec-51.dll</tt>').
+
+</p><hr size="6">
+<a name="SEC18"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC17" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC13" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="subsection"> 3.2.3 Cross compilation for Windows with Linux </h3>
+
+<p>You must use the MinGW cross compilation tools available at
+<a href="http://www.mingw.org/">http://www.mingw.org/</a>.
+
+</p><p>Then configure FFmpeg with the following options:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">./configure --target-os=mingw32 --cross-prefix=i386-mingw32msvc-
+</pre></td></tr></table><p>(you can change the cross-prefix according to the prefix chosen for the
+MinGW tools).
+
+</p><p>Then you can easily test FFmpeg with Wine
+(<a href="http://www.winehq.com/">http://www.winehq.com/</a>).
+
+</p><hr size="6">
+<a name="SEC19"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC18" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC20" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC13" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="subsection"> 3.2.4 Compilation under Cygwin </h3>
+
+<p>The main issue with the 1.5.x Cygwin versions is that newlib, its C library,
+does not contain llrint().  You need to upgrade to the unstable 1.7.x versions,
+or leverage the implementation in MinGW (as explained below).
+
+</p><p>Just install your Cygwin with all the &quot;Base&quot; packages, plus the
+following &quot;Devel&quot; ones:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">binutils, gcc-core, make, subversion, mingw-runtime
+</pre></td></tr></table>
+<p>And the following &quot;Utils&quot; one:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">diffutils
+</pre></td></tr></table>
+<p>The experimental gcc4 package is still buggy, hence please
+use the official gcc 3.4.4 or a 4.2.x compiled from source by yourself.
+
+</p><p>Install the current binutils-20080624-2 as they work fine (the old
+binutils-20060709-1 proved buggy on shared builds).
+
+</p><p>Then create a small library that just contains llrint():
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ar x /usr/lib/mingw/libmingwex.a llrint.o
+ar cq /usr/local/lib/libllrint.a llrint.o
+</pre></td></tr></table>
+<p>Then run
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">./configure --enable-static --disable-shared  --extra-ldflags='-L /usr/local/lib' --extra-libs='-l llrint'
+</pre></td></tr></table>
+<p>to make a static build or
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">./configure --enable-shared --disable-static  --extra-ldflags='-L /usr/local/lib' --extra-libs='-l llrint'
+</pre></td></tr></table>
+<p>to build shared libraries.
+
+</p><p>If you want to build FFmpeg with additional libraries, download Cygwin
+&quot;Devel&quot; packages for Ogg and Vorbis from any Cygwin packages repository:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">libogg-devel, libvorbis-devel
+</pre></td></tr></table>
+<p>These library packages are only available from Cygwin Ports
+(<a href="http://sourceware.org/cygwinports/">http://sourceware.org/cygwinports/</a>) :
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">yasm, libSDL-devel, libdirac-devel, libfaac-devel, libfaad-devel, libgsm-devel,
+libmp3lame-devel, libschroedinger1.0-devel, speex-devel, libtheora-devel,
+libxvidcore-devel
+</pre></td></tr></table>
+<p>The recommendation for libnut and x264 is to build them from source by
+yourself, as they evolve too quickly for Cygwin Ports to be up to date.
+
+</p><p>Cygwin 1.7.x has IPv6 support. You can add IPv6 to Cygwin 1.5.x by means
+of the <code>libgetaddrinfo-devel</code> package, available at Cygwin Ports.
+
+</p><hr size="6">
+<a name="SEC20"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC19" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC21" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC13" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h3 class="subsection"> 3.2.5 Crosscompilation for Windows under Cygwin </h3>
+
+<p>With Cygwin you can create Windows binaries that do not need the cygwin1.dll.
+
+</p><p>Just install your Cygwin as explained before, plus these additional
+&quot;Devel&quot; packages:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">gcc-mingw-core, mingw-runtime, mingw-zlib
+</pre></td></tr></table>
+<p>and add some special flags to your configure invocation.
+
+</p><p>For a static build run
+</p><table><tr><td>&nbsp;</td><td><pre class="example">./configure --target-os=mingw32 --enable-memalign-hack --enable-static --disable-shared --extra-cflags=-mno-cygwin --extra-libs=-mno-cygwin
+</pre></td></tr></table>
+<p>and for a build with shared libraries
+</p><table><tr><td>&nbsp;</td><td><pre class="example">./configure --target-os=mingw32 --enable-memalign-hack --enable-shared --disable-static --extra-cflags=-mno-cygwin --extra-libs=-mno-cygwin
+</pre></td></tr></table>
+<hr size="6">
+<a name="SEC21"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC20" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC22" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.3 BeOS </h2>
+
+<p>BeOS support is broken in mysterious ways.
+
+</p><hr size="6">
+<a name="SEC22"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC21" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[ &gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.4 OS/2 </h2>
+
+<p>For information about compiling FFmpeg on OS/2 see
+<a href="http://www.edm2.com/index.php/FFmpeg">http://www.edm2.com/index.php/FFmpeg</a>.
+
+</p><hr size="6">
+<a name="SEC_About"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1>About This Document</h1>
+<p>
+  This document was generated by <em>lajos</em> on <em>January, 26 2010</em> using <a href="http://texi2html.cvshome.org/"><em>texi2html 1.70</em></a>.
+</p>
+<p>
+  The buttons in the navigation panels have the following meaning:
+</p>
+<table border="1">
+  <tr>
+    <th> Button </th>
+    <th> Name </th>
+    <th> Go to </th>
+    <th> From 1.2.3 go to</th>
+  </tr>
+  <tr>
+    <td align="center"> [ &lt; ] </td>
+    <td align="center">Back</td>
+    <td>previous section in reading order</td>
+    <td>1.2.2</td>
+  </tr>
+  <tr>
+    <td align="center"> [ &gt; ] </td>
+    <td align="center">Forward</td>
+    <td>next section in reading order</td>
+    <td>1.2.4</td>
+  </tr>
+  <tr>
+    <td align="center"> [ &lt;&lt; ] </td>
+    <td align="center">FastBack</td>
+    <td>beginning of this chapter or previous chapter</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td align="center"> [ Up ] </td>
+    <td align="center">Up</td>
+    <td>up section</td>
+    <td>1.2</td>
+  </tr>
+  <tr>
+    <td align="center"> [ &gt;&gt; ] </td>
+    <td align="center">FastForward</td>
+    <td>next chapter</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td align="center"> [Top] </td>
+    <td align="center">Top</td>
+    <td>cover (top) of document</td>
+    <td> &nbsp; </td>
+  </tr>
+  <tr>
+    <td align="center"> [Contents] </td>
+    <td align="center">Contents</td>
+    <td>table of contents</td>
+    <td> &nbsp; </td>
+  </tr>
+  <tr>
+    <td align="center"> [Index] </td>
+    <td align="center">Index</td>
+    <td>index</td>
+    <td> &nbsp; </td>
+  </tr>
+  <tr>
+    <td align="center"> [ ? ] </td>
+    <td align="center">About</td>
+    <td>about (help)</td>
+    <td> &nbsp; </td>
+  </tr>
+</table>
+
+<p>
+  where the <strong> Example </strong> assumes that the current position is at <strong> Subsubsection One-Two-Three </strong> of a document of the following structure:
+</p>
+
+<ul>
+  <li> 1. Section One
+    <ul>
+      <li>1.1 Subsection One-One
+        <ul>
+          <li>...</li>
+        </ul>
+      </li>
+      <li>1.2 Subsection One-Two
+        <ul>
+          <li>1.2.1 Subsubsection One-Two-One</li>
+          <li>1.2.2 Subsubsection One-Two-Two</li>
+          <li>1.2.3 Subsubsection One-Two-Three &nbsp; &nbsp;
+            <strong>&lt;== Current Position </strong></li>
+          <li>1.2.4 Subsubsection One-Two-Four</li>
+        </ul>
+      </li>
+      <li>1.3 Subsection One-Three
+        <ul>
+          <li>...</li>
+        </ul>
+      </li>
+      <li>1.4 Subsection One-Four</li>
+    </ul>
+  </li>
+</ul>
+
+<hr size="1">
+<p>
+ <font size="-1">
+  This document was generated by <em>lajos</em> on <em>January, 26 2010</em> using <a href="http://texi2html.cvshome.org/"><em>texi2html 1.70</em></a>.
+ </font>
+ <br>
+
+</p>
+</body>
+</html>

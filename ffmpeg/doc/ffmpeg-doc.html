@@ -1,0 +1,1614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/loose.dtd">
+<html>
+<!-- Created on January, 26 2010 by texi2html 1.70 -->
+<!--
+Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
+            Karl Berry  <karl@freefriends.org>
+            Olaf Bachmann <obachman@mathematik.uni-kl.de>
+            and many others.
+Maintained by: Many creative people <dev@texi2html.cvshome.org>
+Send bugs and suggestions to <users@texi2html.cvshome.org>
+
+-->
+<head>
+<title>FFmpeg Documentation: 1. Introduction</title>
+
+<meta name="description" content="FFmpeg Documentation: 1. Introduction">
+<meta name="keywords" content="FFmpeg Documentation: 1. Introduction">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="texi2html 1.70">
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+pre.display {font-family: serif}
+pre.format {font-family: serif}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: serif; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: serif; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+ul.toc {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+
+<a name="SEC1"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[ &lt; ]</td>
+<td valign="middle" align="left">[<a href="#SEC2" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[ &lt;&lt; ]</td>
+<td valign="middle" align="left">[ Up ]</td>
+<td valign="middle" align="left">[<a href="#SEC2" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1 class="chapter"> 1. Introduction </h1>
+
+<p>FFmpeg is a very fast video and audio converter. It can also grab from
+a live audio/video source.
+
+</p><p>The command line interface is designed to be intuitive, in the sense
+that FFmpeg tries to figure out all parameters that can possibly be
+derived automatically. You usually only have to specify the target
+bitrate you want.
+
+</p><p>FFmpeg can also convert from any sample rate to any other, and resize
+video on the fly with a high quality polyphase filter.
+
+</p><hr size="6">
+<a name="SEC2"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC1" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC3" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1 class="chapter"> 2. Quick Start </h1>
+
+<hr size="6">
+<a name="SEC3"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC2" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC4" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC2" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC2" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 2.1 Video and Audio grabbing </h2>
+
+<p>FFmpeg can grab video and audio from devices given that you specify the input
+format and device.
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -f oss -i /dev/dsp -f video4linux2 -i /dev/video0 /tmp/out.mpg
+</pre></td></tr></table>
+<p>Note that you must activate the right video source and channel before
+launching FFmpeg with any TV viewer such as xawtv
+(<a href="http://linux.bytesex.org/xawtv/">http://linux.bytesex.org/xawtv/</a>) by Gerd Knorr. You also
+have to set the audio recording levels correctly with a
+standard mixer.
+
+</p><hr size="6">
+<a name="SEC4"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC3" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC5" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC2" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC2" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 2.2 X11 grabbing </h2>
+
+<p>FFmpeg can grab the X11 display.
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -f x11grab -s cif -i :0.0 /tmp/out.mpg
+</pre></td></tr></table>
+<p>0.0 is display.screen number of your X11 server, same as
+the DISPLAY environment variable.
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -f x11grab -s cif -i :0.0+10,20 /tmp/out.mpg
+</pre></td></tr></table>
+<p>0.0 is display.screen number of your X11 server, same as the DISPLAY environment
+variable. 10 is the x-offset and 20 the y-offset for the grabbing.
+
+</p><hr size="6">
+<a name="SEC5"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC4" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC2" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC2" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 2.3 Video and Audio file format conversion </h2>
+
+<p>* FFmpeg can use any supported file format and protocol as input:
+
+</p><p>Examples:
+
+</p><p>* You can use YUV files as input:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i /tmp/test%d.Y /tmp/out.mpg
+</pre></td></tr></table>
+<p>It will use the files:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">/tmp/test0.Y, /tmp/test0.U, /tmp/test0.V,
+/tmp/test1.Y, /tmp/test1.U, /tmp/test1.V, etc...
+</pre></td></tr></table>
+<p>The Y files use twice the resolution of the U and V files. They are
+raw files, without header. They can be generated by all decent video
+decoders. You must specify the size of the image with the `<samp>-s</samp>' option
+if FFmpeg cannot guess it.
+
+</p><p>* You can input from a raw YUV420P file:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i /tmp/test.yuv /tmp/out.avi
+</pre></td></tr></table>
+<p>test.yuv is a file containing raw YUV planar data. Each frame is composed
+of the Y plane followed by the U and V planes at half vertical and
+horizontal resolution.
+
+</p><p>* You can output to a raw YUV420P file:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i mydivx.avi hugefile.yuv
+</pre></td></tr></table>
+<p>* You can set several input files and output files:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i /tmp/a.wav -s 640x480 -i /tmp/a.yuv /tmp/a.mpg
+</pre></td></tr></table>
+<p>Converts the audio file a.wav and the raw YUV video file a.yuv
+to MPEG file a.mpg.
+
+</p><p>* You can also do audio and video conversions at the same time:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i /tmp/a.wav -ar 22050 /tmp/a.mp2
+</pre></td></tr></table>
+<p>Converts a.wav to MPEG audio at 22050 Hz sample rate.
+
+</p><p>* You can encode to several formats at the same time and define a
+mapping from input stream to output streams:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i /tmp/a.wav -ab 64k /tmp/a.mp2 -ab 128k /tmp/b.mp2 -map 0:0 -map 0:0
+</pre></td></tr></table>
+<p>Converts a.wav to a.mp2 at 64 kbits and to b.mp2 at 128 kbits. '-map
+file:index' specifies which input stream is used for each output
+stream, in the order of the definition of output streams.
+
+</p><p>* You can transcode decrypted VOBs:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i snatch_1.vob -f avi -vcodec mpeg4 -b 800k -g 300 -bf 2 -acodec libmp3lame -ab 128k snatch.avi
+</pre></td></tr></table>
+<p>This is a typical DVD ripping example; the input is a VOB file, the
+output an AVI file with MPEG-4 video and MP3 audio. Note that in this
+command we use B-frames so the MPEG-4 stream is DivX5 compatible, and
+GOP size is 300 which means one intra frame every 10 seconds for 29.97fps
+input video. Furthermore, the audio stream is MP3-encoded so you need
+to enable LAME support by passing <code>--enable-libmp3lame</code> to configure.
+The mapping is particularly useful for DVD transcoding
+to get the desired audio language.
+
+</p><p>NOTE: To see the supported input formats, use <code>ffmpeg -formats</code>.
+
+</p><p>* You can extract images from a video, or create a video from many images:
+
+</p><p>For extracting images from a video:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i foo.avi -r 1 -s WxH -f image2 foo-%03d.jpeg
+</pre></td></tr></table>
+<p>This will extract one video frame per second from the video and will
+output them in files named `<tt>foo-001.jpeg</tt>', `<tt>foo-002.jpeg</tt>',
+etc. Images will be rescaled to fit the new WxH values.
+
+</p><p>If you want to extract just a limited number of frames, you can use the
+above command in combination with the -vframes or -t option, or in
+combination with -ss to start extracting from a certain point in time.
+
+</p><p>For creating a video from many images:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -f image2 -i foo-%03d.jpeg -r 12 -s WxH foo.avi
+</pre></td></tr></table>
+<p>The syntax <code>foo-%03d.jpeg</code> specifies to use a decimal number
+composed of three digits padded with zeroes to express the sequence
+number. It is the same syntax supported by the C printf function, but
+only formats accepting a normal integer are suitable.
+
+</p><p>* You can put many streams of the same type in the output:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i test1.avi -i test2.avi -vcodec copy -acodec copy -vcodec copy -acodec copy test12.avi -newvideo -newaudio
+</pre></td></tr></table>
+<p>In addition to the first video and audio streams, the resulting
+output file `<tt>test12.avi</tt>' will contain the second video
+and the second audio stream found in the input streams list.
+
+</p><p>The <code>-newvideo</code>, <code>-newaudio</code> and <code>-newsubtitle</code>
+options have to be specified immediately after the name of the output
+file to which you want to add them.
+
+</p><hr size="6">
+<a name="SEC6"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC5" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC7" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC2" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1 class="chapter"> 3. Invocation </h1>
+
+<hr size="6">
+<a name="SEC7"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC6" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC8" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.1 Syntax </h2>
+
+<p>The generic syntax is:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg [[infile options][`<samp>-i</samp>' <var>infile</var>]]... {[outfile options] <var>outfile</var>}...
+</pre></td></tr></table><p>As a general rule, options are applied to the next specified
+file. Therefore, order is important, and you can have the same
+option on the command line multiple times. Each occurrence is
+then applied to the next input or output file.
+
+</p><p>* To set the video bitrate of the output file to 64kbit/s:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i input.avi -b 64k output.avi
+</pre></td></tr></table>
+<p>* To force the frame rate of the output file to 24 fps:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i input.avi -r 24 output.avi
+</pre></td></tr></table>
+<p>* To force the frame rate of the input file (valid for raw formats only)
+to 1 fps and the frame rate of the output file to 24 fps:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -r 1 -i input.m2v -r 24 output.avi
+</pre></td></tr></table>
+<p>The format option may be needed for raw input files.
+
+</p><p>By default, FFmpeg tries to convert as losslessly as possible: It
+uses the same audio and video parameters for the outputs as the one
+specified for the inputs.
+
+</p><hr size="6">
+<a name="SEC8"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC7" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC9" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.2 Main options </h2>
+
+<dl compact="compact">
+<dt>`<samp> -L</samp>'</dt>
+<dd><p>Show license.
+
+</p></dd>
+<dt>`<samp> -h, -?, -help, --help</samp>'</dt>
+<dd><p>Show help.
+
+</p></dd>
+<dt>`<samp> -version</samp>'</dt>
+<dd><p>Show version.
+
+</p></dd>
+<dt>`<samp> -formats</samp>'</dt>
+<dd><p>Show available formats.
+
+</p><p>The fields preceding the format names have the following meanings:
+</p><dl compact="compact">
+<dt>`<samp> D</samp>'</dt>
+<dd><p>Decoding available
+</p></dd>
+<dt>`<samp> E</samp>'</dt>
+<dd><p>Encoding available
+</p></dd>
+</dl>
+
+</dd>
+<dt>`<samp> -codecs</samp>'</dt>
+<dd><p>Show available codecs.
+
+</p><p>The fields preceding the codec names have the following meanings:
+</p><dl compact="compact">
+<dt>`<samp> D</samp>'</dt>
+<dd><p>Decoding available
+</p></dd>
+<dt>`<samp> E</samp>'</dt>
+<dd><p>Encoding available
+</p></dd>
+<dt>`<samp> V/A/S</samp>'</dt>
+<dd><p>Video/audio/subtitle codec
+</p></dd>
+<dt>`<samp> S</samp>'</dt>
+<dd><p>Codec supports slices
+</p></dd>
+<dt>`<samp> D</samp>'</dt>
+<dd><p>Codec supports direct rendering
+</p></dd>
+<dt>`<samp> T</samp>'</dt>
+<dd><p>Codec can handle input truncated at random locations instead of only at frame boundaries
+</p></dd>
+</dl>
+
+</dd>
+<dt>`<samp> -bsfs</samp>'</dt>
+<dd><p>Show available bitstream filters.
+
+</p></dd>
+<dt>`<samp> -protocols</samp>'</dt>
+<dd><p>Show available protocols.
+
+</p></dd>
+<dt>`<samp> -filters</samp>'</dt>
+<dd><p>Show available libavfilter filters.
+
+</p></dd>
+<dt>`<samp> -pix_fmts</samp>'</dt>
+<dd><p>Show available pixel formats.
+
+</p></dd>
+<dt>`<samp> -loglevel <var>loglevel</var></samp>'</dt>
+<dd><p>Set the logging level used by the library.
+<var>loglevel</var> is a number or a string containing one of the following values:
+</p><dl compact="compact">
+<dt>`<samp> quiet</samp>'</dt>
+<dt>`<samp> panic</samp>'</dt>
+<dt>`<samp> fatal</samp>'</dt>
+<dt>`<samp> error</samp>'</dt>
+<dt>`<samp> warning</samp>'</dt>
+<dt>`<samp> info</samp>'</dt>
+<dt>`<samp> verbose</samp>'</dt>
+<dt>`<samp> debug</samp>'</dt>
+</dl>
+
+
+</dd>
+<dt>`<samp> -f <var>fmt</var></samp>'</dt>
+<dd><p>Force format.
+
+</p></dd>
+<dt>`<samp> -i <var>filename</var></samp>'</dt>
+<dd><p>input file name
+
+</p></dd>
+<dt>`<samp> -y</samp>'</dt>
+<dd><p>Overwrite output files.
+
+</p></dd>
+<dt>`<samp> -t <var>duration</var></samp>'</dt>
+<dd><p>Restrict the transcoded/captured video sequence
+to the duration specified in seconds.
+<code>hh:mm:ss[.xxx]</code> syntax is also supported.
+
+</p></dd>
+<dt>`<samp> -fs <var>limit_size</var></samp>'</dt>
+<dd><p>Set the file size limit.
+
+</p></dd>
+<dt>`<samp> -ss <var>position</var></samp>'</dt>
+<dd><p>Seek to given time position in seconds.
+<code>hh:mm:ss[.xxx]</code> syntax is also supported.
+
+</p></dd>
+<dt>`<samp> -itsoffset <var>offset</var></samp>'</dt>
+<dd><p>Set the input time offset in seconds.
+<code>[-]hh:mm:ss[.xxx]</code> syntax is also supported.
+This option affects all the input files that follow it.
+The offset is added to the timestamps of the input files.
+Specifying a positive offset means that the corresponding
+streams are delayed by 'offset' seconds.
+
+</p></dd>
+<dt>`<samp> -timestamp <var>time</var></samp>'</dt>
+<dd><p>Set the timestamp.
+
+</p></dd>
+<dt>`<samp> -metadata <var>key</var>=<var>value</var></samp>'</dt>
+<dd><p>Set a metadata key/value pair.
+
+</p><p>For example, for setting the title in the output file:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i in.avi -metadata title=&quot;my title&quot; out.flv
+</pre></td></tr></table>
+</dd>
+<dt>`<samp> -v <var>number</var></samp>'</dt>
+<dd><p>Set the logging verbosity level.
+
+</p></dd>
+<dt>`<samp> -target <var>type</var></samp>'</dt>
+<dd><p>Specify target file type (&quot;vcd&quot;, &quot;svcd&quot;, &quot;dvd&quot;, &quot;dv&quot;, &quot;dv50&quot;, &quot;pal-vcd&quot;,
+&quot;ntsc-svcd&quot;, ... ). All the format options (bitrate, codecs,
+buffer sizes) are then set automatically. You can just type:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i myfile.avi -target vcd /tmp/vcd.mpg
+</pre></td></tr></table>
+<p>Nevertheless you can specify additional options as long as you know
+they do not conflict with the standard, as in:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i myfile.avi -target vcd -bf 2 /tmp/vcd.mpg
+</pre></td></tr></table>
+</dd>
+<dt>`<samp> -dframes <var>number</var></samp>'</dt>
+<dd><p>Set the number of data frames to record.
+
+</p></dd>
+<dt>`<samp> -scodec <var>codec</var></samp>'</dt>
+<dd><p>Force subtitle codec ('copy' to copy stream).
+
+</p></dd>
+<dt>`<samp> -newsubtitle</samp>'</dt>
+<dd><p>Add a new subtitle stream to the current output stream.
+
+</p></dd>
+<dt>`<samp> -slang <var>code</var></samp>'</dt>
+<dd><p>Set the ISO 639 language code (3 letters) of the current subtitle stream.
+
+</p></dd>
+</dl>
+
+<hr size="6">
+<a name="SEC9"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC8" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC10" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.3 Video Options </h2>
+
+<dl compact="compact">
+<dt>`<samp> -b <var>bitrate</var></samp>'</dt>
+<dd><p>Set the video bitrate in bit/s (default = 200 kb/s).
+</p></dd>
+<dt>`<samp> -vframes <var>number</var></samp>'</dt>
+<dd><p>Set the number of video frames to record.
+</p></dd>
+<dt>`<samp> -r <var>fps</var></samp>'</dt>
+<dd><p>Set frame rate (Hz value, fraction or abbreviation), (default = 25).
+</p></dd>
+<dt>`<samp> -s <var>size</var></samp>'</dt>
+<dd><p>Set frame size. The format is `<samp>wxh</samp>' (ffserver default = 160x128, ffmpeg default = same as source).
+The following abbreviations are recognized:
+</p><dl compact="compact">
+<dt>`<samp> sqcif</samp>'</dt>
+<dd><p>128x96
+</p></dd>
+<dt>`<samp> qcif</samp>'</dt>
+<dd><p>176x144
+</p></dd>
+<dt>`<samp> cif</samp>'</dt>
+<dd><p>352x288
+</p></dd>
+<dt>`<samp> 4cif</samp>'</dt>
+<dd><p>704x576
+</p></dd>
+<dt>`<samp> 16cif</samp>'</dt>
+<dd><p>1408x1152
+</p></dd>
+<dt>`<samp> qqvga</samp>'</dt>
+<dd><p>160x120
+</p></dd>
+<dt>`<samp> qvga</samp>'</dt>
+<dd><p>320x240
+</p></dd>
+<dt>`<samp> vga</samp>'</dt>
+<dd><p>640x480
+</p></dd>
+<dt>`<samp> svga</samp>'</dt>
+<dd><p>800x600
+</p></dd>
+<dt>`<samp> xga</samp>'</dt>
+<dd><p>1024x768
+</p></dd>
+<dt>`<samp> uxga</samp>'</dt>
+<dd><p>1600x1200
+</p></dd>
+<dt>`<samp> qxga</samp>'</dt>
+<dd><p>2048x1536
+</p></dd>
+<dt>`<samp> sxga</samp>'</dt>
+<dd><p>1280x1024
+</p></dd>
+<dt>`<samp> qsxga</samp>'</dt>
+<dd><p>2560x2048
+</p></dd>
+<dt>`<samp> hsxga</samp>'</dt>
+<dd><p>5120x4096
+</p></dd>
+<dt>`<samp> wvga</samp>'</dt>
+<dd><p>852x480
+</p></dd>
+<dt>`<samp> wxga</samp>'</dt>
+<dd><p>1366x768
+</p></dd>
+<dt>`<samp> wsxga</samp>'</dt>
+<dd><p>1600x1024
+</p></dd>
+<dt>`<samp> wuxga</samp>'</dt>
+<dd><p>1920x1200
+</p></dd>
+<dt>`<samp> woxga</samp>'</dt>
+<dd><p>2560x1600
+</p></dd>
+<dt>`<samp> wqsxga</samp>'</dt>
+<dd><p>3200x2048
+</p></dd>
+<dt>`<samp> wquxga</samp>'</dt>
+<dd><p>3840x2400
+</p></dd>
+<dt>`<samp> whsxga</samp>'</dt>
+<dd><p>6400x4096
+</p></dd>
+<dt>`<samp> whuxga</samp>'</dt>
+<dd><p>7680x4800
+</p></dd>
+<dt>`<samp> cga</samp>'</dt>
+<dd><p>320x200
+</p></dd>
+<dt>`<samp> ega</samp>'</dt>
+<dd><p>640x350
+</p></dd>
+<dt>`<samp> hd480</samp>'</dt>
+<dd><p>852x480
+</p></dd>
+<dt>`<samp> hd720</samp>'</dt>
+<dd><p>1280x720
+</p></dd>
+<dt>`<samp> hd1080</samp>'</dt>
+<dd><p>1920x1080
+</p></dd>
+</dl>
+
+</dd>
+<dt>`<samp> -aspect <var>aspect</var></samp>'</dt>
+<dd><p>Set aspect ratio (4:3, 16:9 or 1.3333, 1.7777).
+</p></dd>
+<dt>`<samp> -croptop <var>size</var></samp>'</dt>
+<dd><p>Set top crop band size (in pixels).
+</p></dd>
+<dt>`<samp> -cropbottom <var>size</var></samp>'</dt>
+<dd><p>Set bottom crop band size (in pixels).
+</p></dd>
+<dt>`<samp> -cropleft <var>size</var></samp>'</dt>
+<dd><p>Set left crop band size (in pixels).
+</p></dd>
+<dt>`<samp> -cropright <var>size</var></samp>'</dt>
+<dd><p>Set right crop band size (in pixels).
+</p></dd>
+<dt>`<samp> -padtop <var>size</var></samp>'</dt>
+<dd><p>Set top pad band size (in pixels).
+</p></dd>
+<dt>`<samp> -padbottom <var>size</var></samp>'</dt>
+<dd><p>Set bottom pad band size (in pixels).
+</p></dd>
+<dt>`<samp> -padleft <var>size</var></samp>'</dt>
+<dd><p>Set left pad band size (in pixels).
+</p></dd>
+<dt>`<samp> -padright <var>size</var></samp>'</dt>
+<dd><p>Set right pad band size (in pixels).
+</p></dd>
+<dt>`<samp> -padcolor <var>hex_color</var></samp>'</dt>
+<dd><p>Set color of padded bands. The value for padcolor is expressed
+as a six digit hexadecimal number where the first two digits
+represent red, the middle two digits green and last two digits
+blue (default = 000000 (black)).
+</p></dd>
+<dt>`<samp> -vn</samp>'</dt>
+<dd><p>Disable video recording.
+</p></dd>
+<dt>`<samp> -bt <var>tolerance</var></samp>'</dt>
+<dd><p>Set video bitrate tolerance (in bits, default 4000k).
+Has a minimum value of: (target_bitrate/target_framerate).
+In 1-pass mode, bitrate tolerance specifies how far ratecontrol is
+willing to deviate from the target average bitrate value. This is
+not related to min/max bitrate. Lowering tolerance too much has
+an adverse effect on quality.
+</p></dd>
+<dt>`<samp> -maxrate <var>bitrate</var></samp>'</dt>
+<dd><p>Set max video bitrate (in bit/s).
+Requires -bufsize to be set.
+</p></dd>
+<dt>`<samp> -minrate <var>bitrate</var></samp>'</dt>
+<dd><p>Set min video bitrate (in bit/s).
+Most useful in setting up a CBR encode:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i myfile.avi -b 4000k -minrate 4000k -maxrate 4000k -bufsize 1835k out.m2v
+</pre></td></tr></table><p>It is of little use elsewise.
+</p></dd>
+<dt>`<samp> -bufsize <var>size</var></samp>'</dt>
+<dd><p>Set video buffer verifier buffer size (in bits).
+</p></dd>
+<dt>`<samp> -vcodec <var>codec</var></samp>'</dt>
+<dd><p>Force video codec to <var>codec</var>. Use the <code>copy</code> special value to
+tell that the raw codec data must be copied as is.
+</p></dd>
+<dt>`<samp> -sameq</samp>'</dt>
+<dd><p>Use same video quality as source (implies VBR).
+
+</p></dd>
+<dt>`<samp> -pass <var>n</var></samp>'</dt>
+<dd><p>Select the pass number (1 or 2). It is used to do two-pass
+video encoding. The statistics of the video are recorded in the first
+pass into a log file (see also the option -passlogfile),
+and in the second pass that log file is used to generate the video
+at the exact requested bitrate.
+On pass 1, you may just deactivate audio and set output to null,
+examples for Windows and Unix:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i foo.mov -vcodec libxvid -pass 1 -an -f rawvideo -y NUL
+ffmpeg -i foo.mov -vcodec libxvid -pass 1 -an -f rawvideo -y /dev/null
+</pre></td></tr></table>
+</dd>
+<dt>`<samp> -passlogfile <var>prefix</var></samp>'</dt>
+<dd><p>Set two-pass log file name prefix to <var>prefix</var>, the default file name
+prefix is &quot;ffmpeg2pass&quot;. The complete file name will be
+`<tt>PREFIX-N.log</tt>', where N is a number specific to the output
+stream.
+
+</p></dd>
+<dt>`<samp> -newvideo</samp>'</dt>
+<dd><p>Add a new video stream to the current output stream.
+
+</p></dd>
+<dt>`<samp> -vlang <var>code</var></samp>'</dt>
+<dd><p>Set the ISO 639 language code (3 letters) of the current video stream.
+
+</p></dd>
+</dl>
+
+<hr size="6">
+<a name="SEC10"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC9" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC11" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.4 Advanced Video Options </h2>
+
+<dl compact="compact">
+<dt>`<samp> -pix_fmt <var>format</var></samp>'</dt>
+<dd><p>Set pixel format. Use 'list' as parameter to show all the supported
+pixel formats.
+</p></dd>
+<dt>`<samp> -sws_flags <var>flags</var></samp>'</dt>
+<dd><p>Set SwScaler flags (only available when compiled with swscale support).
+</p></dd>
+<dt>`<samp> -g <var>gop_size</var></samp>'</dt>
+<dd><p>Set the group of pictures size.
+</p></dd>
+<dt>`<samp> -intra</samp>'</dt>
+<dd><p>Use only intra frames.
+</p></dd>
+<dt>`<samp> -vdt <var>n</var></samp>'</dt>
+<dd><p>Discard threshold.
+</p></dd>
+<dt>`<samp> -qscale <var>q</var></samp>'</dt>
+<dd><p>Use fixed video quantizer scale (VBR).
+</p></dd>
+<dt>`<samp> -qmin <var>q</var></samp>'</dt>
+<dd><p>minimum video quantizer scale (VBR)
+</p></dd>
+<dt>`<samp> -qmax <var>q</var></samp>'</dt>
+<dd><p>maximum video quantizer scale (VBR)
+</p></dd>
+<dt>`<samp> -qdiff <var>q</var></samp>'</dt>
+<dd><p>maximum difference between the quantizer scales (VBR)
+</p></dd>
+<dt>`<samp> -qblur <var>blur</var></samp>'</dt>
+<dd><p>video quantizer scale blur (VBR) (range 0.0 - 1.0)
+</p></dd>
+<dt>`<samp> -qcomp <var>compression</var></samp>'</dt>
+<dd><p>video quantizer scale compression (VBR) (default 0.5).
+Constant of ratecontrol equation. Recommended range for default rc_eq: 0.0-1.0
+
+</p></dd>
+<dt>`<samp> -lmin <var>lambda</var></samp>'</dt>
+<dd><p>minimum video lagrange factor (VBR)
+</p></dd>
+<dt>`<samp> -lmax <var>lambda</var></samp>'</dt>
+<dd><p>max video lagrange factor (VBR)
+</p></dd>
+<dt>`<samp> -mblmin <var>lambda</var></samp>'</dt>
+<dd><p>minimum macroblock quantizer scale (VBR)
+</p></dd>
+<dt>`<samp> -mblmax <var>lambda</var></samp>'</dt>
+<dd><p>maximum macroblock quantizer scale (VBR)
+
+</p><p>These four options (lmin, lmax, mblmin, mblmax) use 'lambda' units,
+but you may use the QP2LAMBDA constant to easily convert from 'q' units:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i src.ext -lmax 21*QP2LAMBDA dst.ext
+</pre></td></tr></table>
+</dd>
+<dt>`<samp> -rc_init_cplx <var>complexity</var></samp>'</dt>
+<dd><p>initial complexity for single pass encoding
+</p></dd>
+<dt>`<samp> -b_qfactor <var>factor</var></samp>'</dt>
+<dd><p>qp factor between P- and B-frames
+</p></dd>
+<dt>`<samp> -i_qfactor <var>factor</var></samp>'</dt>
+<dd><p>qp factor between P- and I-frames
+</p></dd>
+<dt>`<samp> -b_qoffset <var>offset</var></samp>'</dt>
+<dd><p>qp offset between P- and B-frames
+</p></dd>
+<dt>`<samp> -i_qoffset <var>offset</var></samp>'</dt>
+<dd><p>qp offset between P- and I-frames
+</p></dd>
+<dt>`<samp> -rc_eq <var>equation</var></samp>'</dt>
+<dd><p>Set rate control equation (see <a href="#ANC1">FFmpeg formula evaluator</a>) (default = <code>tex^qComp</code>).
+</p></dd>
+<dt>`<samp> -rc_override <var>override</var></samp>'</dt>
+<dd><p>rate control override for specific intervals
+</p></dd>
+<dt>`<samp> -me_method <var>method</var></samp>'</dt>
+<dd><p>Set motion estimation method to <var>method</var>.
+Available methods are (from lowest to best quality):
+</p><dl compact="compact">
+<dt>`<samp> zero</samp>'</dt>
+<dd><p>Try just the (0, 0) vector.
+</p></dd>
+<dt>`<samp> phods</samp>'</dt>
+<dt>`<samp> log</samp>'</dt>
+<dt>`<samp> x1</samp>'</dt>
+<dt>`<samp> hex</samp>'</dt>
+<dt>`<samp> umh</samp>'</dt>
+<dt>`<samp> epzs</samp>'</dt>
+<dd><p>(default method)
+</p></dd>
+<dt>`<samp> full</samp>'</dt>
+<dd><p>exhaustive search (slow and marginally better than epzs)
+</p></dd>
+</dl>
+
+</dd>
+<dt>`<samp> -dct_algo <var>algo</var></samp>'</dt>
+<dd><p>Set DCT algorithm to <var>algo</var>. Available values are:
+</p><dl compact="compact">
+<dt>`<samp> 0</samp>'</dt>
+<dd><p>FF_DCT_AUTO (default)
+</p></dd>
+<dt>`<samp> 1</samp>'</dt>
+<dd><p>FF_DCT_FASTINT
+</p></dd>
+<dt>`<samp> 2</samp>'</dt>
+<dd><p>FF_DCT_INT
+</p></dd>
+<dt>`<samp> 3</samp>'</dt>
+<dd><p>FF_DCT_MMX
+</p></dd>
+<dt>`<samp> 4</samp>'</dt>
+<dd><p>FF_DCT_MLIB
+</p></dd>
+<dt>`<samp> 5</samp>'</dt>
+<dd><p>FF_DCT_ALTIVEC
+</p></dd>
+</dl>
+
+</dd>
+<dt>`<samp> -idct_algo <var>algo</var></samp>'</dt>
+<dd><p>Set IDCT algorithm to <var>algo</var>. Available values are:
+</p><dl compact="compact">
+<dt>`<samp> 0</samp>'</dt>
+<dd><p>FF_IDCT_AUTO (default)
+</p></dd>
+<dt>`<samp> 1</samp>'</dt>
+<dd><p>FF_IDCT_INT
+</p></dd>
+<dt>`<samp> 2</samp>'</dt>
+<dd><p>FF_IDCT_SIMPLE
+</p></dd>
+<dt>`<samp> 3</samp>'</dt>
+<dd><p>FF_IDCT_SIMPLEMMX
+</p></dd>
+<dt>`<samp> 4</samp>'</dt>
+<dd><p>FF_IDCT_LIBMPEG2MMX
+</p></dd>
+<dt>`<samp> 5</samp>'</dt>
+<dd><p>FF_IDCT_PS2
+</p></dd>
+<dt>`<samp> 6</samp>'</dt>
+<dd><p>FF_IDCT_MLIB
+</p></dd>
+<dt>`<samp> 7</samp>'</dt>
+<dd><p>FF_IDCT_ARM
+</p></dd>
+<dt>`<samp> 8</samp>'</dt>
+<dd><p>FF_IDCT_ALTIVEC
+</p></dd>
+<dt>`<samp> 9</samp>'</dt>
+<dd><p>FF_IDCT_SH4
+</p></dd>
+<dt>`<samp> 10</samp>'</dt>
+<dd><p>FF_IDCT_SIMPLEARM
+</p></dd>
+</dl>
+
+</dd>
+<dt>`<samp> -er <var>n</var></samp>'</dt>
+<dd><p>Set error resilience to <var>n</var>.
+</p><dl compact="compact">
+<dt>`<samp> 1</samp>'</dt>
+<dd><p>FF_ER_CAREFUL (default)
+</p></dd>
+<dt>`<samp> 2</samp>'</dt>
+<dd><p>FF_ER_COMPLIANT
+</p></dd>
+<dt>`<samp> 3</samp>'</dt>
+<dd><p>FF_ER_AGGRESSIVE
+</p></dd>
+<dt>`<samp> 4</samp>'</dt>
+<dd><p>FF_ER_VERY_AGGRESSIVE
+</p></dd>
+</dl>
+
+</dd>
+<dt>`<samp> -ec <var>bit_mask</var></samp>'</dt>
+<dd><p>Set error concealment to <var>bit_mask</var>. <var>bit_mask</var> is a bit mask of
+the following values:
+</p><dl compact="compact">
+<dt>`<samp> 1</samp>'</dt>
+<dd><p>FF_EC_GUESS_MVS (default = enabled)
+</p></dd>
+<dt>`<samp> 2</samp>'</dt>
+<dd><p>FF_EC_DEBLOCK (default = enabled)
+</p></dd>
+</dl>
+
+</dd>
+<dt>`<samp> -bf <var>frames</var></samp>'</dt>
+<dd><p>Use 'frames' B-frames (supported for MPEG-1, MPEG-2 and MPEG-4).
+</p></dd>
+<dt>`<samp> -mbd <var>mode</var></samp>'</dt>
+<dd><p>macroblock decision
+</p><dl compact="compact">
+<dt>`<samp> 0</samp>'</dt>
+<dd><p>FF_MB_DECISION_SIMPLE: Use mb_cmp (cannot change it yet in FFmpeg).
+</p></dd>
+<dt>`<samp> 1</samp>'</dt>
+<dd><p>FF_MB_DECISION_BITS: Choose the one which needs the fewest bits.
+</p></dd>
+<dt>`<samp> 2</samp>'</dt>
+<dd><p>FF_MB_DECISION_RD: rate distortion
+</p></dd>
+</dl>
+
+</dd>
+<dt>`<samp> -4mv</samp>'</dt>
+<dd><p>Use four motion vector by macroblock (MPEG-4 only).
+</p></dd>
+<dt>`<samp> -part</samp>'</dt>
+<dd><p>Use data partitioning (MPEG-4 only).
+</p></dd>
+<dt>`<samp> -bug <var>param</var></samp>'</dt>
+<dd><p>Work around encoder bugs that are not auto-detected.
+</p></dd>
+<dt>`<samp> -strict <var>strictness</var></samp>'</dt>
+<dd><p>How strictly to follow the standards.
+</p></dd>
+<dt>`<samp> -aic</samp>'</dt>
+<dd><p>Enable Advanced intra coding (h263+).
+</p></dd>
+<dt>`<samp> -umv</samp>'</dt>
+<dd><p>Enable Unlimited Motion Vector (h263+)
+
+</p></dd>
+<dt>`<samp> -deinterlace</samp>'</dt>
+<dd><p>Deinterlace pictures.
+</p></dd>
+<dt>`<samp> -ilme</samp>'</dt>
+<dd><p>Force interlacing support in encoder (MPEG-2 and MPEG-4 only).
+Use this option if your input file is interlaced and you want
+to keep the interlaced format for minimum losses.
+The alternative is to deinterlace the input stream with
+`<samp>-deinterlace</samp>', but deinterlacing introduces losses.
+</p></dd>
+<dt>`<samp> -psnr</samp>'</dt>
+<dd><p>Calculate PSNR of compressed frames.
+</p></dd>
+<dt>`<samp> -vstats</samp>'</dt>
+<dd><p>Dump video coding statistics to `<tt>vstats_HHMMSS.log</tt>'.
+</p></dd>
+<dt>`<samp> -vstats_file <var>file</var></samp>'</dt>
+<dd><p>Dump video coding statistics to <var>file</var>.
+</p></dd>
+<dt>`<samp> -top <var>n</var></samp>'</dt>
+<dd><p>top=1/bottom=0/auto=-1 field first
+</p></dd>
+<dt>`<samp> -dc <var>precision</var></samp>'</dt>
+<dd><p>Intra_dc_precision.
+</p></dd>
+<dt>`<samp> -vtag <var>fourcc/tag</var></samp>'</dt>
+<dd><p>Force video tag/fourcc.
+</p></dd>
+<dt>`<samp> -qphist</samp>'</dt>
+<dd><p>Show QP histogram.
+</p></dd>
+<dt>`<samp> -vbsf <var>bitstream_filter</var></samp>'</dt>
+<dd><p>Bitstream filters available are &quot;dump_extra&quot;, &quot;remove_extra&quot;, &quot;noise&quot;, &quot;h264_mp4toannexb&quot;, &quot;imxdump&quot;, &quot;mjpegadump&quot;.
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i h264.mp4 -vcodec copy -vbsf h264_mp4toannexb -an out.h264
+</pre></td></tr></table></dd>
+</dl>
+
+<hr size="6">
+<a name="SEC11"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC10" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC12" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.5 Audio Options </h2>
+
+<dl compact="compact">
+<dt>`<samp> -aframes <var>number</var></samp>'</dt>
+<dd><p>Set the number of audio frames to record.
+</p></dd>
+<dt>`<samp> -ar <var>freq</var></samp>'</dt>
+<dd><p>Set the audio sampling frequency (default = 44100 Hz).
+</p></dd>
+<dt>`<samp> -ab <var>bitrate</var></samp>'</dt>
+<dd><p>Set the audio bitrate in bit/s (default = 64k).
+</p></dd>
+<dt>`<samp> -ac <var>channels</var></samp>'</dt>
+<dd><p>Set the number of audio channels (default = 1).
+</p></dd>
+<dt>`<samp> -an</samp>'</dt>
+<dd><p>Disable audio recording.
+</p></dd>
+<dt>`<samp> -acodec <var>codec</var></samp>'</dt>
+<dd><p>Force audio codec to <var>codec</var>. Use the <code>copy</code> special value to
+specify that the raw codec data must be copied as is.
+</p></dd>
+<dt>`<samp> -newaudio</samp>'</dt>
+<dd><p>Add a new audio track to the output file. If you want to specify parameters,
+do so before <code>-newaudio</code> (<code>-acodec</code>, <code>-ab</code>, etc..).
+
+</p><p>Mapping will be done automatically, if the number of output streams is equal to
+the number of input streams, else it will pick the first one that matches. You
+can override the mapping using <code>-map</code> as usual.
+
+</p><p>Example:
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i file.mpg -vcodec copy -acodec ac3 -ab 384k test.mpg -acodec mp2 -ab 192k -newaudio
+</pre></td></tr></table></dd>
+<dt>`<samp> -alang <var>code</var></samp>'</dt>
+<dd><p>Set the ISO 639 language code (3 letters) of the current audio stream.
+</p></dd>
+</dl>
+
+<hr size="6">
+<a name="SEC12"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC11" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC13" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.6 Advanced Audio options: </h2>
+
+<dl compact="compact">
+<dt>`<samp> -atag <var>fourcc/tag</var></samp>'</dt>
+<dd><p>Force audio tag/fourcc.
+</p></dd>
+<dt>`<samp> -absf <var>bitstream_filter</var></samp>'</dt>
+<dd><p>Bitstream filters available are &quot;dump_extra&quot;, &quot;remove_extra&quot;, &quot;noise&quot;, &quot;mp3comp&quot;, &quot;mp3decomp&quot;.
+</p></dd>
+</dl>
+
+<hr size="6">
+<a name="SEC13"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC12" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC14" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.7 Subtitle options: </h2>
+
+<dl compact="compact">
+<dt>`<samp> -scodec <var>codec</var></samp>'</dt>
+<dd><p>Force subtitle codec ('copy' to copy stream).
+</p></dd>
+<dt>`<samp> -newsubtitle</samp>'</dt>
+<dd><p>Add a new subtitle stream to the current output stream.
+</p></dd>
+<dt>`<samp> -slang <var>code</var></samp>'</dt>
+<dd><p>Set the ISO 639 language code (3 letters) of the current subtitle stream.
+</p></dd>
+<dt>`<samp> -sn</samp>'</dt>
+<dd><p>Disable subtitle recording.
+</p></dd>
+<dt>`<samp> -sbsf <var>bitstream_filter</var></samp>'</dt>
+<dd><p>Bitstream filters available are &quot;mov2textsub&quot;, &quot;text2movsub&quot;.
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -i file.mov -an -vn -sbsf mov2textsub -scodec copy -f rawvideo sub.txt
+</pre></td></tr></table></dd>
+</dl>
+
+<hr size="6">
+<a name="SEC14"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC13" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC15" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.8 Audio/Video grab options </h2>
+
+<dl compact="compact">
+<dt>`<samp> -vc <var>channel</var></samp>'</dt>
+<dd><p>Set video grab channel (DV1394 only).
+</p></dd>
+<dt>`<samp> -tvstd <var>standard</var></samp>'</dt>
+<dd><p>Set television standard (NTSC, PAL (SECAM)).
+</p></dd>
+<dt>`<samp> -isync</samp>'</dt>
+<dd><p>Synchronize read on input.
+</p></dd>
+</dl>
+
+<hr size="6">
+<a name="SEC15"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC14" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC16" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.9 Advanced options </h2>
+
+<dl compact="compact">
+<dt>`<samp> -map <var>input_stream_id</var>[:<var>sync_stream_id</var>]</samp>'</dt>
+<dd><p>Set stream mapping from input streams to output streams.
+Just enumerate the input streams in the order you want them in the output.
+<var>sync_stream_id</var> if specified sets the input stream to sync
+against.
+</p></dd>
+<dt>`<samp> -map_meta_data <var>outfile</var>:<var>infile</var></samp>'</dt>
+<dd><p>Set meta data information of <var>outfile</var> from <var>infile</var>.
+</p></dd>
+<dt>`<samp> -debug</samp>'</dt>
+<dd><p>Print specific debug info.
+</p></dd>
+<dt>`<samp> -benchmark</samp>'</dt>
+<dd><p>Add timings for benchmarking.
+</p></dd>
+<dt>`<samp> -dump</samp>'</dt>
+<dd><p>Dump each input packet.
+</p></dd>
+<dt>`<samp> -hex</samp>'</dt>
+<dd><p>When dumping packets, also dump the payload.
+</p></dd>
+<dt>`<samp> -bitexact</samp>'</dt>
+<dd><p>Only use bit exact algorithms (for codec testing).
+</p></dd>
+<dt>`<samp> -ps <var>size</var></samp>'</dt>
+<dd><p>Set RTP payload size in bytes.
+</p></dd>
+<dt>`<samp> -re</samp>'</dt>
+<dd><p>Read input at native frame rate. Mainly used to simulate a grab device.
+</p></dd>
+<dt>`<samp> -loop_input</samp>'</dt>
+<dd><p>Loop over the input stream. Currently it works only for image
+streams. This option is used for automatic FFserver testing.
+</p></dd>
+<dt>`<samp> -loop_output <var>number_of_times</var></samp>'</dt>
+<dd><p>Repeatedly loop output for formats that support looping such as animated GIF
+(0 will loop the output infinitely).
+</p></dd>
+<dt>`<samp> -threads <var>count</var></samp>'</dt>
+<dd><p>Thread count.
+</p></dd>
+<dt>`<samp> -vsync <var>parameter</var></samp>'</dt>
+<dd><p>Video sync method. Video will be stretched/squeezed to match the timestamps,
+it is done by duplicating and dropping frames. With -map you can select from
+which stream the timestamps should be taken. You can leave either video or
+audio unchanged and sync the remaining stream(s) to the unchanged one.
+</p></dd>
+<dt>`<samp> -async <var>samples_per_second</var></samp>'</dt>
+<dd><p>Audio sync method. &quot;Stretches/squeezes&quot; the audio stream to match the timestamps,
+the parameter is the maximum samples per second by which the audio is changed.
+-async 1 is a special case where only the start of the audio stream is corrected
+without any later correction.
+</p></dd>
+<dt>`<samp> -copyts</samp>'</dt>
+<dd><p>Copy timestamps from input to output.
+</p></dd>
+<dt>`<samp> -shortest</samp>'</dt>
+<dd><p>Finish encoding when the shortest input stream ends.
+</p></dd>
+<dt>`<samp> -dts_delta_threshold</samp>'</dt>
+<dd><p>Timestamp discontinuity delta threshold.
+</p></dd>
+<dt>`<samp> -muxdelay <var>seconds</var></samp>'</dt>
+<dd><p>Set the maximum demux-decode delay.
+</p></dd>
+<dt>`<samp> -muxpreload <var>seconds</var></samp>'</dt>
+<dd><p>Set the initial demux-decode delay.
+</p></dd>
+</dl>
+
+<hr size="6">
+<a name="SEC16"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC15" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC17" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.10 Preset files </h2>
+
+<p>A preset file contains a sequence of <var>option</var>=<var>value</var> pairs,
+one for each line, specifying a sequence of options which would be
+awkward to specify on the command line. Lines starting with the hash
+('#') character are ignored and are used to provide comments. Check
+the `<tt>ffpresets</tt>' directory in the FFmpeg source tree for examples.
+
+</p><p>Preset files are specified with the <code>vpre</code>, <code>apre</code>,
+<code>spre</code>, and <code>fpre</code> options. The <code>fpre</code> option takes the
+filename of the preset instead of a preset name as input and can be
+used for any kind of codec. For the <code>vpre</code>, <code>apre</code>, and
+<code>spre</code> options, the options specified in a preset file are
+applied to the currently selected codec of the same type as the preset
+option.
+
+</p><p>The argument passed to the <code>vpre</code>, <code>apre</code>, and <code>spre</code>
+preset options identifies the preset file to use according to the
+following rules:
+
+</p><p>First ffmpeg searches for a file named <var>arg</var>.ffpreset in the
+directories `<tt>$HOME/.ffmpeg</tt>', and in the datadir defined at
+configuration time (usually `<tt>PREFIX/share/ffmpeg</tt>') in that
+order. For example, if the argument is <code>libx264-max</code>, it will
+search for the file `<tt>libx264-max.ffpreset</tt>'.
+
+</p><p>If no such file is found, then ffmpeg will search for a file named
+<var>codec_name</var>-<var>arg</var>.ffpreset in the above-mentioned
+directories, where <var>codec_name</var> is the name of the codec to which
+the preset file options will be applied. For example, if you select
+the video codec with <code>-vcodec libx264</code> and use <code>-vpre max</code>,
+then it will search for the file `<tt>libx264-max.ffpreset</tt>'.
+
+</p><p><a name="ANC1"></a>
+</p><hr size="6">
+<a name="SEC17"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC16" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC18" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.11 FFmpeg formula evaluator </h2>
+
+<p>When evaluating a rate control string, FFmpeg uses an internal formula
+evaluator.
+
+</p><p>The following binary operators are available: <code>+</code>, <code>-</code>,
+<code>*</code>, <code>/</code>, <code>^</code>.
+
+</p><p>The following unary operators are available: <code>+</code>, <code>-</code>,
+<code>(...)</code>.
+
+</p><p>The following statements are available: <code>ld</code>, <code>st</code>,
+<code>while</code>.
+
+</p><p>The following functions are available:
+</p><dl compact="compact">
+<dt><var> sinh(x)</var></dt>
+<dt><var> cosh(x)</var></dt>
+<dt><var> tanh(x)</var></dt>
+<dt><var> sin(x)</var></dt>
+<dt><var> cos(x)</var></dt>
+<dt><var> tan(x)</var></dt>
+<dt><var> atan(x)</var></dt>
+<dt><var> asin(x)</var></dt>
+<dt><var> acos(x)</var></dt>
+<dt><var> exp(x)</var></dt>
+<dt><var> log(x)</var></dt>
+<dt><var> abs(x)</var></dt>
+<dt><var> squish(x)</var></dt>
+<dt><var> gauss(x)</var></dt>
+<dt><var> mod(x, y)</var></dt>
+<dt><var> max(x, y)</var></dt>
+<dt><var> min(x, y)</var></dt>
+<dt><var> eq(x, y)</var></dt>
+<dt><var> gte(x, y)</var></dt>
+<dt><var> gt(x, y)</var></dt>
+<dt><var> lte(x, y)</var></dt>
+<dt><var> lt(x, y)</var></dt>
+<dt><var> bits2qp(bits)</var></dt>
+<dt><var> qp2bits(qp)</var></dt>
+</dl>
+
+<p>The following constants are available:
+</p><dl compact="compact">
+<dt><var> PI</var></dt>
+<dt><var> E</var></dt>
+<dt><var> iTex</var></dt>
+<dt><var> pTex</var></dt>
+<dt><var> tex</var></dt>
+<dt><var> mv</var></dt>
+<dt><var> fCode</var></dt>
+<dt><var> iCount</var></dt>
+<dt><var> mcVar</var></dt>
+<dt><var> var</var></dt>
+<dt><var> isI</var></dt>
+<dt><var> isP</var></dt>
+<dt><var> isB</var></dt>
+<dt><var> avgQP</var></dt>
+<dt><var> qComp</var></dt>
+<dt><var> avgIITex</var></dt>
+<dt><var> avgPITex</var></dt>
+<dt><var> avgPPTex</var></dt>
+<dt><var> avgBPTex</var></dt>
+<dt><var> avgTex</var></dt>
+</dl>
+
+
+
+<hr size="6">
+<a name="SEC18"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC17" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC19" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h2 class="section"> 3.12 Protocols </h2>
+
+<p>The file name can be `<tt>-</tt>' to read from standard input or to write
+to standard output.
+
+</p><p>FFmpeg also handles many protocols specified with an URL syntax.
+
+</p><p>Use 'ffmpeg -protocols' to see a list of the supported protocols.
+
+</p><p>The protocol <code>http:</code> is currently used only to communicate with
+FFserver (see the FFserver documentation). When FFmpeg will be a
+video player it will also be used for streaming :-)
+
+</p><hr size="6">
+<a name="SEC19"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC18" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[ &gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC6" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1 class="chapter"> 4. Tips </h1>
+
+<ul class="toc">
+<li><p> For streaming at very low bitrate application, use a low frame rate
+and a small GOP size. This is especially true for RealVideo where
+the Linux player does not seem to be very fast, so it can miss
+frames. An example is:
+
+</p><table><tr><td>&nbsp;</td><td><pre class="example">ffmpeg -g 3 -r 3 -t 10 -b 50k -s qcif -f rv10 /tmp/b.rm
+</pre></td></tr></table></li><li><p>  The parameter 'q' which is displayed while encoding is the current
+quantizer. The value 1 indicates that a very good quality could
+be achieved. The value 31 indicates the worst quality. If q=31 appears
+too often, it means that the encoder cannot compress enough to meet
+your bitrate. You must either increase the bitrate, decrease the
+frame rate or decrease the frame size.
+
+</p></li><li><p> If your computer is not fast enough, you can speed up the
+compression at the expense of the compression ratio. You can use
+'-me zero' to speed up motion estimation, and '-intra' to disable
+motion estimation completely (you have only I-frames, which means it
+is about as good as JPEG compression).
+
+</p></li><li><p> To have very low audio bitrates, reduce the sampling frequency
+(down to 22050 Hz for MPEG audio, 22050 or 11025 for AC-3).
+
+</p></li><li><p> To have a constant quality (but a variable bitrate), use the option
+'-qscale n' when 'n' is between 1 (excellent quality) and 31 (worst
+quality).
+
+</p></li><li><p> When converting video files, you can use the '-sameq' option which
+uses the same quality factor in the encoder as in the decoder.
+It allows almost lossless encoding.
+
+</p></li></ul>
+
+<hr size="6">
+<a name="SEC_About"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC1" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[Contents]</td>
+<td valign="middle" align="left">[Index]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1>About This Document</h1>
+<p>
+  This document was generated by <em>lajos</em> on <em>January, 26 2010</em> using <a href="http://texi2html.cvshome.org/"><em>texi2html 1.70</em></a>.
+</p>
+<p>
+  The buttons in the navigation panels have the following meaning:
+</p>
+<table border="1">
+  <tr>
+    <th> Button </th>
+    <th> Name </th>
+    <th> Go to </th>
+    <th> From 1.2.3 go to</th>
+  </tr>
+  <tr>
+    <td align="center"> [ &lt; ] </td>
+    <td align="center">Back</td>
+    <td>previous section in reading order</td>
+    <td>1.2.2</td>
+  </tr>
+  <tr>
+    <td align="center"> [ &gt; ] </td>
+    <td align="center">Forward</td>
+    <td>next section in reading order</td>
+    <td>1.2.4</td>
+  </tr>
+  <tr>
+    <td align="center"> [ &lt;&lt; ] </td>
+    <td align="center">FastBack</td>
+    <td>beginning of this chapter or previous chapter</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td align="center"> [ Up ] </td>
+    <td align="center">Up</td>
+    <td>up section</td>
+    <td>1.2</td>
+  </tr>
+  <tr>
+    <td align="center"> [ &gt;&gt; ] </td>
+    <td align="center">FastForward</td>
+    <td>next chapter</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td align="center"> [Top] </td>
+    <td align="center">Top</td>
+    <td>cover (top) of document</td>
+    <td> &nbsp; </td>
+  </tr>
+  <tr>
+    <td align="center"> [Contents] </td>
+    <td align="center">Contents</td>
+    <td>table of contents</td>
+    <td> &nbsp; </td>
+  </tr>
+  <tr>
+    <td align="center"> [Index] </td>
+    <td align="center">Index</td>
+    <td>index</td>
+    <td> &nbsp; </td>
+  </tr>
+  <tr>
+    <td align="center"> [ ? ] </td>
+    <td align="center">About</td>
+    <td>about (help)</td>
+    <td> &nbsp; </td>
+  </tr>
+</table>
+
+<p>
+  where the <strong> Example </strong> assumes that the current position is at <strong> Subsubsection One-Two-Three </strong> of a document of the following structure:
+</p>
+
+<ul>
+  <li> 1. Section One
+    <ul>
+      <li>1.1 Subsection One-One
+        <ul>
+          <li>...</li>
+        </ul>
+      </li>
+      <li>1.2 Subsection One-Two
+        <ul>
+          <li>1.2.1 Subsubsection One-Two-One</li>
+          <li>1.2.2 Subsubsection One-Two-Two</li>
+          <li>1.2.3 Subsubsection One-Two-Three &nbsp; &nbsp;
+            <strong>&lt;== Current Position </strong></li>
+          <li>1.2.4 Subsubsection One-Two-Four</li>
+        </ul>
+      </li>
+      <li>1.3 Subsection One-Three
+        <ul>
+          <li>...</li>
+        </ul>
+      </li>
+      <li>1.4 Subsection One-Four</li>
+    </ul>
+  </li>
+</ul>
+
+<hr size="1">
+<p>
+ <font size="-1">
+  This document was generated by <em>lajos</em> on <em>January, 26 2010</em> using <a href="http://texi2html.cvshome.org/"><em>texi2html 1.70</em></a>.
+ </font>
+ <br>
+
+</p>
+</body>
+</html>
