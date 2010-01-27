@@ -3,7 +3,15 @@
 build
 misc
 
+ffmpeg/ffmpeg
+ffmpeg/ffmpeg_g
+ffmpeg/ffserver
+ffmpeg/ffserver_g
+
 *.[oda]
+
+*.html
+*.1
 
 *.pbxuser
 *.perspective

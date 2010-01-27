@@ -1,1 +1,0 @@
--: libavcodec/arm/jrevdct_arm.S libavcodec/arm/asm.S config.h
