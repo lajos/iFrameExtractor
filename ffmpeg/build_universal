@@ -1,5 +1,10 @@
 #!/bin/tcsh -f
 
+source ./build_armv6
+source ./build_armv7
+
+if (! -d universal) mkdir universal
+
 rm universal/*.a
 
 lipo -create -arch armv6 armv6/libavcodec.a -arch armv7 armv7/libavcodec.a -output universal/libavcodec.a

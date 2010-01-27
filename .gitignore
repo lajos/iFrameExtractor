@@ -3,6 +3,8 @@
 build
 misc
 
+*.[oda]
+
 *.pbxuser
 *.perspective
 *.perspectivev3
