@@ -1,1 +1,1 @@
-#define FFMPEG_VERSION "UNKNOWN"
+#define FFMPEG_VERSION "git-56f8fc4"

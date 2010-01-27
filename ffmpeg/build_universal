@@ -1,0 +1,10 @@
+#!/bin/tcsh -f
+
+rm universal/*.a
+
+lipo -create -arch armv6 armv6/libavcodec.a -arch armv7 armv7/libavcodec.a -output universal/libavcodec.a
+lipo -create -arch armv6 armv6/libavdevice.a -arch armv7 armv7/libavdevice.a -output universal/libavdevice.a
+lipo -create -arch armv6 armv6/libavformat.a -arch armv7 armv7/libavformat.a -output universal/libavformat.a
+lipo -create -arch armv6 armv6/libavutil.a -arch armv7 armv7/libavutil.a -output universal/libavutil.a
+lipo -create -arch armv6 armv6/libswscale.a -arch armv7 armv7/libswscale.a -output universal/libswscale.a
+
