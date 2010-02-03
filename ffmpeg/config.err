@@ -39,7 +39,7 @@ ARCH_LIST='
     x86_32
     x86_64
 '
-Apple_PubSub_Socket_Render=/tmp/launch-9Ppkwv/Render
+Apple_PubSub_Socket_Render=/tmp/launch-3lgecz/Render
 BASH=/bin/sh
 BASH_ARGC=([0]="10")
 BASH_ARGV=([0]="--enable-pic" [1]="--extra-ldflags=-arch armv7" [2]="--extra-cflags=-arch armv7" [3]="--cpu=cortex-a8" [4]="--sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk" [5]="--as=gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc" [6]="--cc=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc" [7]="--target-os=darwin" [8]="--arch=arm" [9]="--enable-cross-compile")
@@ -669,7 +669,7 @@ libnut_demuxer'
 DEPEND_CMD='$(DEPCC) $(DEPFLAGS) $< | sed -e "/^\#.*/d" -e "s,^[[:space:]]*$(*F)\\.o,$(@D)/$(*F).o," > $(@:.o=.d)'
 DEPFLAGS='$(CPPFLAGS) $(CFLAGS) -MM'
 DIRSTACK=()
-DISPLAY=/tmp/launch-eZ8VOt/:0
+DISPLAY=/tmp/launch-h4oqpo/:0
 E1=0
 E2=1
 ENCODER_LIST='asv1_encoder
@@ -1038,7 +1038,7 @@ PATHS_LIST='
 '
 PIPESTATUS=([0]="0")
 POSIXLY_CORRECT=y
-PPID=53570
+PPID=11907
 PROTOCOL_LIST='file_protocol
 gopher_protocol
 http_protocol
@@ -1060,7 +1060,7 @@ SLIBNAME_WITH_MAJOR='$(SLIBNAME).$(LIBMAJOR)'
 SLIBNAME_WITH_VERSION='$(SLIBNAME).$(LIBVERSION)'
 SLIBPREF=lib
 SLIBSUF=.so
-SSH_AUTH_SOCK=/tmp/launch-e2qhMG/Listeners
+SSH_AUTH_SOCK=/tmp/launch-3FZZVb/Listeners
 SVN_EDITOR=/usr/bin/nano
 TERM=xterm-color
 TERM_PROGRAM=Apple_Terminal
@@ -1995,556 +1995,556 @@ type mktemp
 mktemp is /usr/bin/mktemp
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int main(void){ return 0; }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -arch armv7 -mcpu=cortex-a8 -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -arch armv7 -mcpu=cortex-a8 -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o
 check_cflags -std=c99
 check_cc -std=c99
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -arch armv7 -mcpu=cortex-a8 -std=c99 -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -arch armv7 -mcpu=cortex-a8 -std=c99 -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cc -D_FILE_OFFSET_BITS=64
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <stdlib.h>
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -arch armv7 -mcpu=cortex-a8 -std=c99 -D_FILE_OFFSET_BITS=64 -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -arch armv7 -mcpu=cortex-a8 -std=c99 -D_FILE_OFFSET_BITS=64 -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cc -D_LARGEFILE_SOURCE
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <stdlib.h>
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -arch armv7 -mcpu=cortex-a8 -std=c99 -D_LARGEFILE_SOURCE -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -arch armv7 -mcpu=cortex-a8 -std=c99 -D_LARGEFILE_SOURCE -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_host_cflags -std=c99
 check_host_cc -std=c99
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -O3 -g -Wall -std=c99 -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -O3 -g -Wall -std=c99 -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cpp_condition stdlib.h defined(__PIC__) || defined(__pic__) || defined(PIC)
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <stdlib.h>
     2	#if !(defined(__PIC__) || defined(__pic__) || defined(PIC))
     3	#error "unsatisfied condition: defined(__PIC__) || defined(__pic__) || defined(PIC)"
     4	#endif
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -arch armv7 -mcpu=cortex-a8 -std=c99 -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -arch armv7 -mcpu=cortex-a8 -std=c99 -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -fomit-frame-pointer
 check_cc -fomit-frame-pointer
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int ff_extern;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	void foo(void) { __asm__ volatile ("" ::); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	void foo(char * restrict p);
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	struct { int x; } __attribute__((packed)) x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	unsigned int endian = 'B' << 24 | 'I' << 16 | 'G' << 8 | 'E';
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -marm
 check_cc -marm
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	__asm__ (".eabi_attribute 28, 1");
     2	int main(void) { return 0; }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//cckmZ1HY.s:5:Unknown pseudo-op: .eabi_attribute
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//cckmZ1HY.s:5:Rest of line ignored. 1st junk character valued 50 (2).
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ccwESIGB.s:5:Unknown pseudo-op: .eabi_attribute
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ccwESIGB.s:5:Rest of line ignored. 1st junk character valued 50 (2).
 check_asm pld "pld [r0]"
 check_as
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	void foo(void){ __asm__ volatile("pld [r0]"); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_asm armv5te "qadd r0, r0, r0"
 check_as
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	void foo(void){ __asm__ volatile("qadd r0, r0, r0"); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_asm armv6 "sadd16 r0, r0, r0"
 check_as
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	void foo(void){ __asm__ volatile("sadd16 r0, r0, r0"); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_asm armv6t2 "movt r0, #0"
 check_as
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	void foo(void){ __asm__ volatile("movt r0, #0"); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_asm armvfp "fadds s0, s0, s0"
 check_as
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	void foo(void){ __asm__ volatile("fadds s0, s0, s0"); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_asm iwmmxt "wunpckelub wr6, wr4"
 check_as
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	void foo(void){ __asm__ volatile("wunpckelub wr6, wr4"); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 {standard input}:16:selected processor does not support `wunpckelub wr6,wr4'
 check_asm neon "vadd.i16 q0, q0, q0"
 check_as
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	void foo(void){ __asm__ volatile("vadd.i16 q0, q0, q0"); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_func dlopen
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int dlopen();
     2	int main(void){ dlopen(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o
 check_func nanosleep
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int nanosleep();
     2	int main(void){ nanosleep(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o
 check_func fork
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int fork();
     2	int main(void){ fork(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o
 check_func gethrtime
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int gethrtime();
     2	int main(void){ gethrtime(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o
 Undefined symbols:
   "_gethrtime", referenced from:
-      _main in ffconf.j70P91Nq.o
+      _main in ffconf.AfV766nY.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 check_func getrusage
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int getrusage();
     2	int main(void){ getrusage(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o
 check_func inet_aton
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int inet_aton();
     2	int main(void){ inet_aton(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o
 check_func isatty
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int isatty();
     2	int main(void){ isatty(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o
 check_func memalign
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int memalign();
     2	int main(void){ memalign(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o
 Undefined symbols:
   "_memalign", referenced from:
-      _main in ffconf.j70P91Nq.o
+      _main in ffconf.AfV766nY.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 check_func mkstemp
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int mkstemp();
     2	int main(void){ mkstemp(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o
 check_func posix_memalign
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int posix_memalign();
     2	int main(void){ posix_memalign(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o
 check_func_headers io.h setmode
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	
     2	#include <io.h>
     3	int main(int argc, char **argv){
     4	    return (long) setmode;
     5	}
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:2:16: error: io.h: No such file or directory
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c: In function 'main':
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: 'setmode' undeclared (first use in this function)
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: (Each undeclared identifier is reported only once
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: for each function it appears in.)
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:2:16: error: io.h: No such file or directory
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c: In function 'main':
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: 'setmode' undeclared (first use in this function)
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: (Each undeclared identifier is reported only once
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: for each function it appears in.)
 check_func_headers lzo/lzo1x.h lzo1x_999_compress
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	
     2	#include <lzo/lzo1x.h>
     3	int main(int argc, char **argv){
     4	    return (long) lzo1x_999_compress;
     5	}
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:2:23: error: lzo/lzo1x.h: No such file or directory
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c: In function 'main':
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: 'lzo1x_999_compress' undeclared (first use in this function)
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: (Each undeclared identifier is reported only once
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: for each function it appears in.)
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:2:23: error: lzo/lzo1x.h: No such file or directory
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c: In function 'main':
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: 'lzo1x_999_compress' undeclared (first use in this function)
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: (Each undeclared identifier is reported only once
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: for each function it appears in.)
 check_func_headers windows.h GetProcessTimes
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	
     2	#include <windows.h>
     3	int main(int argc, char **argv){
     4	    return (long) GetProcessTimes;
     5	}
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:2:21: error: windows.h: No such file or directory
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c: In function 'main':
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: 'GetProcessTimes' undeclared (first use in this function)
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: (Each undeclared identifier is reported only once
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: for each function it appears in.)
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:2:21: error: windows.h: No such file or directory
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c: In function 'main':
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: 'GetProcessTimes' undeclared (first use in this function)
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: (Each undeclared identifier is reported only once
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: for each function it appears in.)
 check_func_headers windows.h VirtualAlloc
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	
     2	#include <windows.h>
     3	int main(int argc, char **argv){
     4	    return (long) VirtualAlloc;
     5	}
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:2:21: error: windows.h: No such file or directory
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c: In function 'main':
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: 'VirtualAlloc' undeclared (first use in this function)
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: (Each undeclared identifier is reported only once
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: for each function it appears in.)
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:2:21: error: windows.h: No such file or directory
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c: In function 'main':
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: 'VirtualAlloc' undeclared (first use in this function)
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: (Each undeclared identifier is reported only once
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: for each function it appears in.)
 check_header conio.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <conio.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:19: error: conio.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:19: error: conio.h: No such file or directory
 check_header dlfcn.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <dlfcn.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_header malloc.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <malloc.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:20: error: malloc.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:20: error: malloc.h: No such file or directory
 check_header poll.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <poll.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_header sys/mman.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <sys/mman.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_header sys/resource.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <sys/resource.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_header sys/select.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <sys/select.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_header termios.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <termios.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_header vdpau/vdpau.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <vdpau/vdpau.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:25: error: vdpau/vdpau.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:25: error: vdpau/vdpau.h: No such file or directory
 check_header vdpau/vdpau_x11.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <vdpau/vdpau_x11.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:29: error: vdpau/vdpau_x11.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:29: error: vdpau/vdpau_x11.h: No such file or directory
 check_header X11/extensions/XvMClib.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <X11/extensions/XvMClib.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:36: error: X11/extensions/XvMClib.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:36: error: X11/extensions/XvMClib.h: No such file or directory
 check_lib zlib.h zlibVersion -lz
 check_header zlib.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <zlib.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_func zlibVersion
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int zlibVersion();
     2	int main(void){ zlibVersion(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz
 check_lib2 bzlib.h BZ2_bzlibVersion -lbz2
 check_func_headers bzlib.h BZ2_bzlibVersion
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	
     2	#include <bzlib.h>
     3	int main(int argc, char **argv){
     4	    return (long) BZ2_bzlibVersion;
     5	}
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:2:19: error: bzlib.h: No such file or directory
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c: In function 'main':
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: 'BZ2_bzlibVersion' undeclared (first use in this function)
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: (Each undeclared identifier is reported only once
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: for each function it appears in.)
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:2:19: error: bzlib.h: No such file or directory
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c: In function 'main':
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: 'BZ2_bzlibVersion' undeclared (first use in this function)
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: (Each undeclared identifier is reported only once
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: for each function it appears in.)
 check_lib math.h sin -lm
 check_header math.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <math.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_func sin
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int sin();
     2	int main(void){ sin(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1: warning: conflicting types for built-in function 'sin'
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1: warning: conflicting types for built-in function 'sin'
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 check_lib va/va.h vaInitialize -lva
 check_header va/va.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <va/va.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:19: error: va/va.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:19: error: va/va.h: No such file or directory
 check_func llrint
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int llrint();
     2	int main(void){ llrint(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1: warning: conflicting types for built-in function 'llrint'
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1: warning: conflicting types for built-in function 'llrint'
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 check_func log2
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int log2();
     2	int main(void){ log2(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1: warning: conflicting types for built-in function 'log2'
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1: warning: conflicting types for built-in function 'log2'
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 check_func lrint
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int lrint();
     2	int main(void){ lrint(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1: warning: conflicting types for built-in function 'lrint'
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1: warning: conflicting types for built-in function 'lrint'
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 check_func lrintf
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int lrintf();
     2	int main(void){ lrintf(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1: warning: conflicting types for built-in function 'lrintf'
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1: warning: conflicting types for built-in function 'lrintf'
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 check_func round
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int round();
     2	int main(void){ round(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1: warning: conflicting types for built-in function 'round'
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1: warning: conflicting types for built-in function 'round'
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 check_func roundf
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int roundf();
     2	int main(void){ roundf(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1: warning: conflicting types for built-in function 'roundf'
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1: warning: conflicting types for built-in function 'roundf'
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 check_func truncf
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int truncf();
     2	int main(void){ truncf(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1: warning: conflicting types for built-in function 'truncf'
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1: warning: conflicting types for built-in function 'truncf'
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 check_lib2 SDL.h SDL_Init
 check_func_headers SDL.h SDL_Init
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	
     2	#include <SDL.h>
     3	int main(int argc, char **argv){
     4	    return (long) SDL_Init;
     5	}
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -I/opt/local/include/SDL -D_GNU_SOURCE=1 -D_THREAD_SAFE -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm -L/opt/local/lib -lSDLmain -lSDL -Wl,-framework,Cocoa
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -I/opt/local/include/SDL -D_GNU_SOURCE=1 -D_THREAD_SAFE -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm -L/opt/local/lib -lSDLmain -lSDL -Wl,-framework,Cocoa
 ld: framework not found Cocoa
 collect2: ld returned 1 exit status
 check_type sys/types.h sys/socket.h socklen_t
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	
     2	#include <sys/types.h>
     3	#include <sys/socket.h>
     4	socklen_t v;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_header arpa/inet.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <arpa/inet.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_func closesocket
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	extern int closesocket();
     2	int main(void){ closesocket(); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 Undefined symbols:
   "_closesocket", referenced from:
-      _main in ffconf.j70P91Nq.o
+      _main in ffconf.AfV766nY.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <sys/types.h>
     2	#include <sys/socket.h>
     3	#include <netinet/in.h>
@@ -2556,263 +2556,263 @@ BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
     9	    getnameinfo(0,0,0,0,0,0,0);
    10	    IN6_IS_ADDR_MULTICAST((const struct in6_addr *)0);
    11	}
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c: In function 'main':
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:7: error: storage size of 'mreq6' isn't known
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c: In function 'main':
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:7: error: storage size of 'mreq6' isn't known
 check_header linux/videodev.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <linux/videodev.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:28: error: linux/videodev.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:28: error: linux/videodev.h: No such file or directory
 check_header linux/videodev2.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <linux/videodev2.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:29: error: linux/videodev2.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:29: error: linux/videodev2.h: No such file or directory
 check_header sys/videoio.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <sys/videoio.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:25: error: sys/videoio.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:25: error: sys/videoio.h: No such file or directory
 check_func_headers windows.h vfw.h capCreateCaptureWindow -lvfw32
 check_ld -lvfw32
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	
     2	#include <windows.h>
     3	#include <vfw.h>
     4	int main(int argc, char **argv){
     5	    return (long) capCreateCaptureWindow;
     6	}
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:2:21: error: windows.h: No such file or directory
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:3:17: error: vfw.h: No such file or directory
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c: In function 'main':
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:5: error: 'capCreateCaptureWindow' undeclared (first use in this function)
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:5: error: (Each undeclared identifier is reported only once
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:5: error: for each function it appears in.)
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:2:21: error: windows.h: No such file or directory
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:3:17: error: vfw.h: No such file or directory
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c: In function 'main':
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:5: error: 'capCreateCaptureWindow' undeclared (first use in this function)
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:5: error: (Each undeclared identifier is reported only once
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:5: error: for each function it appears in.)
 check_header dev/bktr/ioctl_meteor.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <dev/bktr/ioctl_meteor.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:35: error: dev/bktr/ioctl_meteor.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:35: error: dev/bktr/ioctl_meteor.h: No such file or directory
 check_header machine/ioctl_meteor.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <machine/ioctl_meteor.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:34: error: machine/ioctl_meteor.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:34: error: machine/ioctl_meteor.h: No such file or directory
 check_header dev/video/meteor/ioctl_meteor.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <dev/video/meteor/ioctl_meteor.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:43: error: dev/video/meteor/ioctl_meteor.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:43: error: dev/video/meteor/ioctl_meteor.h: No such file or directory
 check_header dev/ic/bt8xx.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <dev/ic/bt8xx.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:26: error: dev/ic/bt8xx.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:26: error: dev/ic/bt8xx.h: No such file or directory
 check_header sys/soundcard.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <sys/soundcard.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:27: error: sys/soundcard.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:27: error: sys/soundcard.h: No such file or directory
 check_header soundcard.h
 check_cpp
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	#include <soundcard.h>
     2	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:1:23: error: soundcard.h: No such file or directory
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:1:23: error: soundcard.h: No such file or directory
 check_lib2 alsa/asoundlib.h snd_pcm_htimestamp -lasound
 check_func_headers alsa/asoundlib.h snd_pcm_htimestamp
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	
     2	#include <alsa/asoundlib.h>
     3	int main(int argc, char **argv){
     4	    return (long) snd_pcm_htimestamp;
     5	}
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:2:28: error: alsa/asoundlib.h: No such file or directory
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c: In function 'main':
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: 'snd_pcm_htimestamp' undeclared (first use in this function)
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: (Each undeclared identifier is reported only once
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: for each function it appears in.)
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:2:28: error: alsa/asoundlib.h: No such file or directory
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c: In function 'main':
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: 'snd_pcm_htimestamp' undeclared (first use in this function)
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: (Each undeclared identifier is reported only once
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: for each function it appears in.)
 check_lib2 jack/jack.h jack_client_open -ljack
 check_func_headers jack/jack.h jack_client_open
 check_ld
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	
     2	#include <jack/jack.h>
     3	int main(int argc, char **argv){
     4	    return (long) jack_client_open;
     5	}
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:2:23: error: jack/jack.h: No such file or directory
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c: In function 'main':
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: 'jack_client_open' undeclared (first use in this function)
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: (Each undeclared identifier is reported only once
-/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c:4: error: for each function it appears in.)
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:2:23: error: jack/jack.h: No such file or directory
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c: In function 'main':
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: 'jack_client_open' undeclared (first use in this function)
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: (Each undeclared identifier is reported only once
+/var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c:4: error: for each function it appears in.)
 check_cflags -Wdeclaration-after-statement
 check_cc -Wdeclaration-after-statement
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -Wall
 check_cc -Wall
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -Wno-switch
 check_cc -Wno-switch
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -Wdisabled-optimization
 check_cc -Wdisabled-optimization
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -Wpointer-arith
 check_cc -Wpointer-arith
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -Wredundant-decls
 check_cc -Wredundant-decls
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -Wno-pointer-sign
 check_cc -Wno-pointer-sign
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -Wcast-qual
 check_cc -Wcast-qual
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -Wwrite-strings
 check_cc -Wwrite-strings
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -Wtype-limits
 check_cc -Wtype-limits
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 cc1: error: unrecognized command line option "-Wtype-limits"
 check_cflags -Wundef
 check_cc -Wundef
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_ldflags -Wl,--warn-common
 check_ld -Wl,--warn-common
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int main(void){ return 0; }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -Wl,--warn-common -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -Wl,--warn-common -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 ld: unknown option: --warn-common
 collect2: ld returned 1 exit status
 check_ldflags -Wl,--as-needed
 check_ld -Wl,--as-needed
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int main(void){ return 0; }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -Wl,--as-needed -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -Wl,--as-needed -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 ld: unknown option: --as-needed
 collect2: ld returned 1 exit status
 check_ldflags -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
 check_ld -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int main(void){ return 0; }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 ld: unknown option: -rpath-link
 collect2: ld returned 1 exit status
 check_ldflags -Wl,-Bsymbolic
 check_ld -Wl,-Bsymbolic
 check_cc
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int main(void){ return 0; }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -Wl,-Bsymbolic -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.CKYaROZA /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o -lz -lm
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc -Wl,-dynamic,-search_paths_first -arch armv7 --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -Wl,-Bsymbolic -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.r83kOwRB /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o -lz -lm
 ld: unknown option: -Bsymbolic
 collect2: ld returned 1 exit status
 check_cflags -fno-math-errno
 check_cc -fno-math-errno
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -O3 -fno-math-errno -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -O3 -fno-math-errno -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_cflags -fno-signed-zeros
 check_cc -fno-signed-zeros
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -O3 -fno-math-errno -fno-signed-zeros -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -O3 -fno-math-errno -fno-signed-zeros -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 cc1: error: unrecognized command line option "-fno-signed-zeros"
 check_cflags -fno-tree-vectorize
 check_cc -fno-tree-vectorize
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	int x;
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -O3 -fno-math-errno -fno-tree-vectorize -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wundef -O3 -fno-math-errno -fno-tree-vectorize -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
 check_asm asmalign_pot ".align 3"
 check_as
-BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+BEGIN /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
     1	void foo(void){ __asm__ volatile(".align 3"); }
-END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
-gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -g -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.j70P91Nq.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.wi0xp7NW.c
+END /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c
+gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -arch armv7 -mcpu=cortex-a8 -fPIC -g -c -o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.AfV766nY.o /var/folders/wT/wTTwhhy+G1y5Y7cZGPmrN++++TI/-Tmp-//ffconf.SKlGm75O.c

@@ -12,12 +12,12 @@
 		0921E14610FADB97004EAA40 /* VideoFrameExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E14510FADB97004EAA40 /* VideoFrameExtractor.m */; };
 		09A69709110EBE4100FE1DA8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A69708110EBE4100FE1DA8 /* libz.dylib */; };
 		09A69722110EC23900FE1DA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		09AC810411194F0D00AA6A88 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AC80FF11194F0D00AA6A88 /* libavcodec.a */; };
+		09AC810511194F0D00AA6A88 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AC810011194F0D00AA6A88 /* libavdevice.a */; };
+		09AC810611194F0D00AA6A88 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AC810111194F0D00AA6A88 /* libavformat.a */; };
+		09AC810711194F0D00AA6A88 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AC810211194F0D00AA6A88 /* libavutil.a */; };
+		09AC810811194F0D00AA6A88 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AC810311194F0D00AA6A88 /* libswscale.a */; };
 		09F1D692110ED3AA00F50511 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1D691110ED3AA00F50511 /* Default.png */; };
-		09F1D7BA110FF84A00F50511 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F1D7B5110FF84A00F50511 /* libavcodec.a */; };
-		09F1D7BB110FF84A00F50511 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F1D7B6110FF84A00F50511 /* libavdevice.a */; };
-		09F1D7BC110FF84A00F50511 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F1D7B7110FF84A00F50511 /* libavformat.a */; };
-		09F1D7BD110FF84A00F50511 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F1D7B8110FF84A00F50511 /* libavutil.a */; };
-		09F1D7BE110FF84A00F50511 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F1D7B9110FF84A00F50511 /* libswscale.a */; };
 		1D3623260D0F684500981E51 /* iFrameExtractorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* iFrameExtractorAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -32,12 +32,12 @@
 		0921E14410FADB97004EAA40 /* VideoFrameExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFrameExtractor.h; sourceTree = "<group>"; };
 		0921E14510FADB97004EAA40 /* VideoFrameExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoFrameExtractor.m; sourceTree = "<group>"; };
 		09A69708110EBE4100FE1DA8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		09AC80FF11194F0D00AA6A88 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = lib/libavcodec.a; sourceTree = "<group>"; };
+		09AC810011194F0D00AA6A88 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = lib/libavdevice.a; sourceTree = "<group>"; };
+		09AC810111194F0D00AA6A88 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = lib/libavformat.a; sourceTree = "<group>"; };
+		09AC810211194F0D00AA6A88 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = lib/libavutil.a; sourceTree = "<group>"; };
+		09AC810311194F0D00AA6A88 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = lib/libswscale.a; sourceTree = "<group>"; };
 		09F1D691110ED3AA00F50511 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		09F1D7B5110FF84A00F50511 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = universal/libavcodec.a; sourceTree = "<group>"; };
-		09F1D7B6110FF84A00F50511 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = universal/libavdevice.a; sourceTree = "<group>"; };
-		09F1D7B7110FF84A00F50511 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = universal/libavformat.a; sourceTree = "<group>"; };
-		09F1D7B8110FF84A00F50511 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = universal/libavutil.a; sourceTree = "<group>"; };
-		09F1D7B9110FF84A00F50511 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = universal/libswscale.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* iFrameExtractorAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iFrameExtractorAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* iFrameExtractorAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iFrameExtractorAppDelegate.m; sourceTree = "<group>"; };
@@ -57,13 +57,13 @@
 			files = (
 				09A69722110EC23900FE1DA8 /* Foundation.framework in Frameworks */,
 				09A69709110EBE4100FE1DA8 /* libz.dylib in Frameworks */,
+				09AC810611194F0D00AA6A88 /* libavformat.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				09F1D7BA110FF84A00F50511 /* libavcodec.a in Frameworks */,
-				09F1D7BB110FF84A00F50511 /* libavdevice.a in Frameworks */,
-				09F1D7BC110FF84A00F50511 /* libavformat.a in Frameworks */,
-				09F1D7BD110FF84A00F50511 /* libavutil.a in Frameworks */,
-				09F1D7BE110FF84A00F50511 /* libswscale.a in Frameworks */,
+				09AC810411194F0D00AA6A88 /* libavcodec.a in Frameworks */,
+				09AC810511194F0D00AA6A88 /* libavdevice.a in Frameworks */,
+				09AC810711194F0D00AA6A88 /* libavutil.a in Frameworks */,
+				09AC810811194F0D00AA6A88 /* libswscale.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,11 +86,11 @@
 		0918E6C310F839A300300130 /* ffmpeg */ = {
 			isa = PBXGroup;
 			children = (
-				09F1D7B5110FF84A00F50511 /* libavcodec.a */,
-				09F1D7B6110FF84A00F50511 /* libavdevice.a */,
-				09F1D7B7110FF84A00F50511 /* libavformat.a */,
-				09F1D7B8110FF84A00F50511 /* libavutil.a */,
-				09F1D7B9110FF84A00F50511 /* libswscale.a */,
+				09AC80FF11194F0D00AA6A88 /* libavcodec.a */,
+				09AC810011194F0D00AA6A88 /* libavdevice.a */,
+				09AC810111194F0D00AA6A88 /* libavformat.a */,
+				09AC810211194F0D00AA6A88 /* libavutil.a */,
+				09AC810311194F0D00AA6A88 /* libswscale.a */,
 			);
 			path = ffmpeg;
 			sourceTree = "<group>";
@@ -112,7 +112,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				09A69708110EBE4100FE1DA8 /* libz.dylib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -143,6 +142,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				09A69708110EBE4100FE1DA8 /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,6 +231,7 @@
 					"\"$(SRCROOT)/ffmpeg/libavutil\"",
 					"\"$(SRCROOT)/ffmpeg/libswscale\"",
 					"\"$(SRCROOT)/ffmpeg/universal\"",
+					"\"$(SRCROOT)/ffmpeg/lib\"",
 				);
 				PRODUCT_NAME = iFrameExtractor;
 			};
@@ -253,6 +254,7 @@
 					"\"$(SRCROOT)/ffmpeg/libavutil\"",
 					"\"$(SRCROOT)/ffmpeg/libswscale\"",
 					"\"$(SRCROOT)/ffmpeg/universal\"",
+					"\"$(SRCROOT)/ffmpeg/lib\"",
 				);
 				PRODUCT_NAME = iFrameExtractor;
 			};

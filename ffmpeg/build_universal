@@ -4,6 +4,7 @@ source ./build_armv6
 source ./build_armv7
 
 if (! -d universal) mkdir universal
+if (! -d lib) mkdir lib
 
 rm universal/*.a
 
@@ -13,3 +14,6 @@ lipo -create -arch armv6 armv6/libavformat.a -arch armv7 armv7/libavformat.a -ou
 lipo -create -arch armv6 armv6/libavutil.a -arch armv7 armv7/libavutil.a -output universal/libavutil.a
 lipo -create -arch armv6 armv6/libswscale.a -arch armv7 armv7/libswscale.a -output universal/libswscale.a
 
+rm lib/*.a
+
+cp universal/*.a lib/

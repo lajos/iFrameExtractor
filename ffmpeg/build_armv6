@@ -1,6 +1,7 @@
 #!/bin/tcsh -f
 
 if (! -d armv6) mkdir armv6
+if (! -d lib) mkdir lib
 
 rm armv6/*.a
 
@@ -15,3 +16,7 @@ mv libavdevice/libavdevice.a armv6/
 mv libavformat/libavformat.a armv6/
 mv libavutil/libavutil.a armv6/
 mv libswscale/libswscale.a armv6/
+
+rm lib/*.a
+
+cp armv6/*.a lib/
