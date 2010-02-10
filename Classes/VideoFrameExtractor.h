@@ -44,13 +44,13 @@
 /* Size of video frame */
 @property (nonatomic, readonly) int sourceWidth, sourceHeight;
 
-/* Output image size */
+/* Output image size. Set to the source size by default. */
 @property (nonatomic) int outputWidth, outputHeight;
 
 /* Length of video in seconds */
 @property (nonatomic, readonly) double duration;
 
-
+/* Initialize with movie at moviePath. Output dimensions are set to source dimensions. */
 -(id)initWithVideo:(NSString *)moviePath;
 
 /* Read the next frame from the video stream. Returns false if no frame read (video over). */
