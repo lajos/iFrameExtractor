@@ -18,4 +18,42 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 Lesser General Public License for more details.
 
 
+To compile and run the project on your iPhone:
 
+   1. open Terminal
+   2. clone the repository: git clone git://github.com/lajos/iFrameExtractor.git
+   3. go to the ffmpeg folder in the project: cd iFrameExtractor/ffmpeg
+   4. build the ffmpeg libraries: ./build_universal
+   5. open the xcode project and run it on your iPhone device
+
+The build_universal shell script creates libraries that work on both armv6 and armv7 processors. If you need libraries for pre-3Gs devices (iPhone 2g, iPhone3G, iPod Touch), use the build_armv6 script. For iPhone 3Gs only libraries, use build_armv7.
+
+iFrameExtractorAppDelegate creates an instance of VideoFrameExtractor (the class that grabs images from the video). When you press the play button, iFrameExtractorAppDelegate sets up a loop and displays all the images from the video until it reaches the end of the movie.
+
+The VideoFrameExtractor class is based on Martin Böhme’s tutorial, upgraded to use swscale. Initialize this class with the full path of the movie:
+
+VideoFrameExtractor *video = [[VideoFrameExtractor alloc]
+               initWithVideo:@"/full/path/to/movie.mov"];
+
+By default, the output size will match the movie’s size. You can set outputWidth and outputHeight to change the dimensions:
+
+video.outputWidth = 426;
+video.outputHeight = 320;
+
+Use stepFrame to grab the next frame. This method returns false if there are no more frames (reached the end of video):
+
+BOOL result = [video stepFrame];
+
+The processed frame can be accessed as a UIImage on the currentImage property:
+
+UIImage *myImage = video.currentImage;
+
+You can seek to a specific time (in seconds) using the seekTime: method:
+
+[video seekTime:1.0];
+
+The movie’s length can be queried by checking the duration property:
+
+NSLog(@"video duration: %f",video.duration);
+
+http://www.codza.com/extracting-frames-from-movies-on-iphone
