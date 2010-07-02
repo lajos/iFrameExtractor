@@ -2,17 +2,18 @@
 
 source ./build_armv6
 source ./build_armv7
+source ./build_i386
 
 if (! -d universal) mkdir universal
 if (! -d lib) mkdir lib
 
 rm universal/*.a
 
-lipo -create -arch armv6 armv6/libavcodec.a -arch armv7 armv7/libavcodec.a -output universal/libavcodec.a
-lipo -create -arch armv6 armv6/libavdevice.a -arch armv7 armv7/libavdevice.a -output universal/libavdevice.a
-lipo -create -arch armv6 armv6/libavformat.a -arch armv7 armv7/libavformat.a -output universal/libavformat.a
-lipo -create -arch armv6 armv6/libavutil.a -arch armv7 armv7/libavutil.a -output universal/libavutil.a
-lipo -create -arch armv6 armv6/libswscale.a -arch armv7 armv7/libswscale.a -output universal/libswscale.a
+lipo -create -arch armv6 armv6/libavcodec.a -arch armv7 armv7/libavcodec.a -arch i386 i386/libavcodec.a -output universal/libavcodec.a
+lipo -create -arch armv6 armv6/libavdevice.a -arch armv7 armv7/libavdevice.a -arch i386 i386/libavdevice.a -output universal/libavdevice.a
+lipo -create -arch armv6 armv6/libavformat.a -arch armv7 armv7/libavformat.a -arch i386 i386/libavformat.a -output universal/libavformat.a
+lipo -create -arch armv6 armv6/libavutil.a -arch armv7 armv7/libavutil.a -arch i386 i386/libavutil.a -output universal/libavutil.a
+lipo -create -arch armv6 armv6/libswscale.a -arch armv7 armv7/libswscale.a -arch i386 i386/libswscale.a -output universal/libswscale.a
 
 rm lib/*.a
 

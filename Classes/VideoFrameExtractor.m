@@ -106,7 +106,7 @@ initError:
 -(void)setupScaler {
 
 	// Release old picture and scaler
-	av_free(&picture);
+	avpicture_free(&picture);
 	sws_freeContext(img_convert_ctx);	
 	
 	// Allocate RGB picture
@@ -136,16 +136,16 @@ initError:
 	sws_freeContext(img_convert_ctx);	
 
 	// Free RGB picture
-	av_free(&picture);
+	avpicture_free(&picture);
 	
     // Free the YUV frame
     av_free(pFrame);
 	
     // Close the codec
-    avcodec_close(pCodecCtx);
+    if (pCodecCtx) avcodec_close(pCodecCtx);
 	
     // Close the video file
-    av_close_input_file(pFormatCtx);
+    if (pFormatCtx) av_close_input_file(pFormatCtx);
 	
 	[super dealloc];
 }

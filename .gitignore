@@ -7,8 +7,10 @@ ffmpeg/ffmpeg
 ffmpeg/ffmpeg_g
 ffmpeg/ffserver
 ffmpeg/ffserver_g
+ffmpeg/config.*
 
 *.[oda]
+*.pc
 
 *.html
 *.1
