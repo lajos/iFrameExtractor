@@ -222,7 +222,7 @@ setenv YACC /Developer/usr/bin/yacc
 
 make clean
 
-./configure --disable-mmx --disable-doc --disable-ffmpeg --disable-ffplay --disable-ffserver --cc=/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/i686-apple-darwin10-gcc-4.2.1 --as='gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/i686-apple-darwin10-gcc-4.2.1' --sysroot=/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk --extra-cflags='-fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2'
+./configure --disable-bzlib --disable-mmx --disable-doc --disable-ffmpeg --disable-ffplay --disable-ffserver --cc=/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/i686-apple-darwin10-gcc-4.2.1 --as='gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/i686-apple-darwin10-gcc-4.2.1' --sysroot=/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk --extra-cflags='-fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2'
 
 
 make
