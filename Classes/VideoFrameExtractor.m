@@ -42,6 +42,11 @@
 	return (double)pFormatCtx->duration / AV_TIME_BASE;
 }
 
+-(double)currentTime {
+    AVRational timeBase = pFormatCtx->streams[videoStream]->time_base;
+    return packet.pts * (double)timeBase.num / timeBase.den;
+}
+
 -(int)sourceWidth {
 	return pCodecCtx->width;
 }
@@ -141,6 +146,9 @@ initError:
 
 	// Free RGB picture
 	avpicture_free(&picture);
+    
+    // Free the packet that was allocated by av_read_frame
+    av_free_packet(&packet);
 	
     // Free the YUV frame
     av_free(pFrame);
@@ -155,7 +163,7 @@ initError:
 }
 
 -(BOOL)stepFrame {
-	AVPacket packet;
+	// AVPacket packet;
     int frameFinished=0;
 
     while(!frameFinished && av_read_frame(pFormatCtx, &packet)>=0) {
@@ -165,8 +173,6 @@ initError:
             avcodec_decode_video2(pCodecCtx, pFrame, &frameFinished, &packet);
         }
 		
-        // Free the packet that was allocated by av_read_frame
-        av_free_packet(&packet);
 	}
 	return frameFinished!=0;
 }
