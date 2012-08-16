@@ -56,41 +56,45 @@
     AVCodec         *pCodec;
 		
     // Register all formats and codecs
+    avcodec_register_all();
     av_register_all();
 	
     // Open video file
-    if(av_open_input_file(&pFormatCtx, [moviePath cStringUsingEncoding:NSASCIIStringEncoding], NULL, 0, NULL)!=0)
-        goto initError; // Couldn't open file
+    if(avformat_open_input(&pFormatCtx, [moviePath cStringUsingEncoding:NSASCIIStringEncoding], NULL, NULL) != 0) {
+        av_log(NULL, AV_LOG_ERROR, "Couldn't open file\n");
+        goto initError;
+    }
 	
     // Retrieve stream information
-    if(av_find_stream_info(pFormatCtx)<0)
-        goto initError; // Couldn't find stream information
-		
+    if(avformat_find_stream_info(pFormatCtx,NULL) < 0) {
+        av_log(NULL, AV_LOG_ERROR, "Couldn't find stream information\n");
+        goto initError;
+    }
+    
     // Find the first video stream
-    videoStream=-1;
-    for(int i=0; i<pFormatCtx->nb_streams; i++)
-        if(pFormatCtx->streams[i]->codec->codec_type==CODEC_TYPE_VIDEO)
-        {
-            videoStream=i;
-            break;
-        }
-    if(videoStream==-1)
-        goto initError; // Didn't find a video stream
+    if ((videoStream =  av_find_best_stream(pFormatCtx, AVMEDIA_TYPE_VIDEO, -1, -1, &pCodec, 0)) < 0) {
+        av_log(NULL, AV_LOG_ERROR, "Cannot find a video stream in the input file\n");
+        goto initError;
+    }
 	
     // Get a pointer to the codec context for the video stream
-    pCodecCtx=pFormatCtx->streams[videoStream]->codec;
-		
+    pCodecCtx = pFormatCtx->streams[videoStream]->codec;
+    
     // Find the decoder for the video stream
-    pCodec=avcodec_find_decoder(pCodecCtx->codec_id);
-    if(pCodec==NULL)
-        goto initError; // Codec not found
+    pCodec = avcodec_find_decoder(pCodecCtx->codec_id);
+    if(pCodec == NULL) {
+        av_log(NULL, AV_LOG_ERROR, "Unsupported codec!\n");
+        goto initError;
+    }
 	
     // Open codec
-    if(avcodec_open(pCodecCtx, pCodec)<0)
-        goto initError; // Could not open codec
+    if(avcodec_open2(pCodecCtx, pCodec, NULL) < 0) {
+        av_log(NULL, AV_LOG_ERROR, "Cannot open video decoder\n");
+        goto initError;
+    }
 	
     // Allocate video frame
-    pFrame=avcodec_alloc_frame();
+    pFrame = avcodec_alloc_frame();
 			
 	outputWidth = pCodecCtx->width;
 	self.outputHeight = pCodecCtx->height;
@@ -145,7 +149,7 @@ initError:
     if (pCodecCtx) avcodec_close(pCodecCtx);
 	
     // Close the video file
-    if (pFormatCtx) av_close_input_file(pFormatCtx);
+    if (pFormatCtx) avformat_close_input(&pFormatCtx);
 	
 	[super dealloc];
 }
