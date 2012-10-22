@@ -67,6 +67,10 @@
 									repeats:YES];
 }
 
+- (IBAction)showTime:(id)sender {
+    NSLog(@"current time: %f s",video.currentTime);
+}
+
 #define LERP(A,B,C) ((A)*(1.0-C)+(B)*C)
 
 -(void)displayNextFrame:(NSTimer *)timer {

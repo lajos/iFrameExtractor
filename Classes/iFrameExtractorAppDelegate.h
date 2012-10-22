@@ -39,6 +39,7 @@
 @property (nonatomic, retain) VideoFrameExtractor *video;
 
 -(IBAction)playButtonAction:(id)sender;
+- (IBAction)showTime:(id)sender;
 
 @end
 

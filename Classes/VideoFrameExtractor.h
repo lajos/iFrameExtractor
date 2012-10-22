@@ -28,7 +28,8 @@
 @interface VideoFrameExtractor : NSObject {
 	AVFormatContext *pFormatCtx;
 	AVCodecContext *pCodecCtx;
-    AVFrame *pFrame; 
+    AVFrame *pFrame;
+    AVPacket packet;
 	AVPicture picture;
 	int videoStream;
 	struct SwsContext *img_convert_ctx;
@@ -36,6 +37,7 @@
 	int outputWidth, outputHeight;
 	UIImage *currentImage;
 	double duration;
+    double currentTime;
 }
 
 /* Last decoded picture as UIImage */
@@ -49,6 +51,9 @@
 
 /* Length of video in seconds */
 @property (nonatomic, readonly) double duration;
+
+/* Current time of video in seconds */
+@property (nonatomic, readonly) double currentTime;
 
 /* Initialize with movie at moviePath. Output dimensions are set to source dimensions. */
 -(id)initWithVideo:(NSString *)moviePath;
